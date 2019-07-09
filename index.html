@@ -51,10 +51,56 @@
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">IDBI 037 Sensoren</h1>
         <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.3.1</li>
-          <li>jQuery 3.4.1</li>
+
+        <h2>Sensoren</h2>
+        <ul class="devices">
+          <li>
+            <span>Luftfeuchtigkeit</span>
+            <div class="plant"></div>
+            <p>
+              <strong><?=$row5['relhum']?>  %</strong>
+            </p>
+                                    <p>
+                                            Min: <?=$row6['min_relhum']?>  %<br/>
+                                            Max: <?=$row6['max_relhum']?>  %
+                                    </p>
+          </li>
+          <li>
+            <span>Aussentemperatur</span>
+            <div class="thermos"></div>
+            <p>
+              <strong><?=$row2['celsius']?>  &deg;C</strong>
+            </p>
+            <p>
+              Min: <?=$row4['min_temp']?> &deg;C<br/>
+              Max: <?=$row4['max_temp']?> &deg;C
+            </p>
+          </li>
+          <li>
+            <span>Innentemperatur</span>
+            <div class="thermos2"></div>
+            <p>
+              <strong><?=$row['celsius']?>  &deg;C</strong>
+            </p>
+            <p>
+              Min: <?=$row3['min_temp']?> &deg;C<br/>
+              Max: <?=$row3['max_temp']?> &deg;C
+                                    </p>
+          </li>	
+          <li>
+            <span>Wassertemperatur</span>
+            <div class="thermos"></div>
+            <p>
+                                            <strong><?=$row7['celsius']?>  &deg;C</strong>
+                                    </p>
+                                    <p>
+                                            Min: <?=$row8['min_temp']?> &deg;C<br/>
+                                            Max: <?=$row8['max_temp']?> &deg;C
+    
+            </p>
+          </li>					
         </ul>
+
       </div>
     </div>
   </div>
