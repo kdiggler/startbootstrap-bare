@@ -96,6 +96,18 @@ include('dbconnect.php');
                     </li>
                 </ul>
 
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">LED Blau</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>
+                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
+                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
+                        </p>
+                    </div>
+                </div>
+
                 <h2>Sensoren</h2>
                 <ul class="devices">
                     <li>
