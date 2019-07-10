@@ -85,7 +85,7 @@ include('dbconnect.php');
                 <h1 class="mt-5">IDBI 037 Sensoren</h1>
 
                 <h2>LED's</h2>
-                <ul class="list-group">
+                <ul class="d-inline p-2 bg-dark text-white">
                     <li>
                         <span>LED Blau</span>
                         <div class="diode"></div>
@@ -97,7 +97,7 @@ include('dbconnect.php');
                 </ul>
 
                 <h2>Sensoren</h2>
-                <ul class="list-group">
+                <ul class="devices">
                     <li>
                         <span>Luftfeuchtigkeit</span>
                         <div class="plant"></div>
