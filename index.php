@@ -85,19 +85,19 @@ include('dbconnect.php');
                 <h1 class="mt-5">IDBI 037 Sensoren</h1>
 
                 <h2>LED's</h2>
-                <ul class="devices">
+                <ul class="list-group">
                     <li>
                         <span>LED Blau</span>
                         <div class="diode"></div>
                         <p>
-                            <a class="btn btn-secondary active" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                            <a class="btn btn-secondary active" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
+                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
+                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
                         </p>
                     </li>
                 </ul>
 
                 <h2>Sensoren</h2>
-                <ul class="devices">
+                <ul class="list-group">
                     <li>
                         <span>Luftfeuchtigkeit</span>
                         <div class="plant"></div>
