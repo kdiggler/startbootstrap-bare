@@ -90,8 +90,8 @@ include('dbconnect.php');
                         <span>LED Blau</span>
                         <div class="diode"></div>
                         <p>
-                            <a href="ledonoff.php?state=<led2_1>">An</a>
-                            <a href="ledonoff.php?state=<led2_0>">Aus</a>
+                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
+                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
                         </p>
                     </li>
                 </ul>
