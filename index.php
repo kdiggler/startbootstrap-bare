@@ -84,6 +84,18 @@ include('dbconnect.php');
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">IDBI 037 Sensoren</h1>
 
+                <h2>LED's</h2>
+                <ul class="devices">
+                    <li>
+                        <span>LED Blau</span>
+                        <div class="diode"></div>
+                        <p>
+                            <a href="ledonoff.php?state=<led2_1>">An</a>
+                            <a href="ledonoff.php?state=<led2_0>">Aus</a>
+                        </p>
+                    </li>
+                </ul>
+
                 <h2>Sensoren</h2>
                 <ul class="devices">
                     <li>
