@@ -123,9 +123,10 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
-                    <li>
-                        <span>Aussentemperatur</span>
-                        <div class="thermos"></div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Aussentemperatur</h5>
                         <p>
                             <strong><?= $row2['celsius'] ?> &deg;C</strong>
                         </p>
@@ -133,7 +134,8 @@ include('dbconnect.php');
                             Min: <?= $row4['min_temp'] ?> &deg;C<br />
                             Max: <?= $row4['max_temp'] ?> &deg;C
                         </p>
-                    </li>
+                    </div>
+                </div>
                     <li>
                         <span>Innentemperatur</span>
                         <div class="thermos2"></div>
