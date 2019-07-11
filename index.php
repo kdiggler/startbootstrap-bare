@@ -128,9 +128,11 @@ include('dbconnect.php');
 </div>
                         <div class="col-sm-6">
                             <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                        Aussentemperatur
+                                    </div>
                                 <img class="card-img-top" src="..." alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Aussentemperatur</h5>
                                     <p>
                                         <strong><?= $row2['celsius'] ?> &deg;C</strong>
                                     </p>
