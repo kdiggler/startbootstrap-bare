@@ -17,13 +17,12 @@ include('dbconnect.php');
     <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-  <!--  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="vendor/bootstrap/css/custom.css" rel="stylesheet"> -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
 #hum {
-  width: 46px;
-  height: 44px;
-  background: url(sprite_new1.png) 0 0;
+  width: 128px;
+  height: 128px;
+  background: url(sprite_new1.png) 0 -640;
 }
 </style>
 </head>
