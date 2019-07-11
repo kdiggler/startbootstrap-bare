@@ -110,78 +110,81 @@ include('dbconnect.php');
 
                 <h2>Sensoren</h2>
                 <div class="row">
-  <div class="col-sm-6">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Luftfeuchtigkeit</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>
-                            <strong><?= $row5['relhum'] ?> %</strong>
-                        </p>
-                        <p>
-                            Min: <?= $row6['min_relhum'] ?> %<br />
-                            Max: <?= $row6['max_relhum'] ?> %
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Aussentemperatur</h5>
-                        <p>
-                            <strong><?= $row2['celsius'] ?> &deg;C</strong>
-                        </p>
-                        <p>
-                            Min: <?= $row4['min_temp'] ?> &deg;C<br />
-                            Max: <?= $row4['max_temp'] ?> &deg;C
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-header">
-                        Innentemperatur
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <p>
-                            <strong><?= $row['celsius'] ?> &deg;C</strong>
-                        </p>
-                        <p>
-                            Min: <?= $row3['min_temp'] ?> &deg;C<br />
-                            Max: <?= $row3['max_temp'] ?> &deg;C
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-header">
-                        Wassertemperatur
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p>
-                            <strong><?= $row7['celsius'] ?> &deg;C</strong>
-                        </p>
-                        <p>
-                            Min: <?= $row8['min_temp'] ?> &deg;C<br />
-                            Max: <?= $row8['max_temp'] ?> &deg;C
-
-                        </p>
-                    </div>
-                </div>
+                    <div class="col-sm-6">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Luftfeuchtigkeit</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p>
+                                    <strong><?= $row5['relhum'] ?> %</strong>
+                                </p>
+                                <p>
+                                    Min: <?= $row6['min_relhum'] ?> %<br />
+                                    Max: <?= $row6['max_relhum'] ?> %
+                                </p>
+                            </div>
+                        </div>
 </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aussentemperatur</h5>
+                                    <p>
+                                        <strong><?= $row2['celsius'] ?> &deg;C</strong>
+                                    </p>
+                                    <p>
+                                        Min: <?= $row4['min_temp'] ?> &deg;C<br />
+                                        Max: <?= $row4['max_temp'] ?> &deg;C
+                                    </p>
+                                </div>
+                            </div>
+</div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Innentemperatur
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <p>
+                                            <strong><?= $row['celsius'] ?> &deg;C</strong>
+                                        </p>
+                                        <p>
+                                            Min: <?= $row3['min_temp'] ?> &deg;C<br />
+                                            Max: <?= $row3['max_temp'] ?> &deg;C
+                                        </p>
+                                    </div>
+                                </div>
+</div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Wassertemperatur
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Special title treatment</h5>
+                                            <p>
+                                                <strong><?= $row7['celsius'] ?> &deg;C</strong>
+                                            </p>
+                                            <p>
+                                                Min: <?= $row8['min_temp'] ?> &deg;C<br />
+                                                Max: <?= $row8['max_temp'] ?> &deg;C
 
-            </div>
-        </div>
-    </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <!-- Bootstrap core JavaScript -->
+                    <script src="vendor/jquery/jquery.slim.min.js"></script>
+                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
