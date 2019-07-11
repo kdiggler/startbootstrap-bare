@@ -136,9 +136,13 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
-                    <li>
-                        <span>Innentemperatur</span>
-                        <div class="thermos2"></div>
+                <div class="card">
+                    <div class="card-header">
+                        Innentemperatur
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <p>
                             <strong><?= $row['celsius'] ?> &deg;C</strong>
                         </p>
@@ -146,19 +150,31 @@ include('dbconnect.php');
                             Min: <?= $row3['min_temp'] ?> &deg;C<br />
                             Max: <?= $row3['max_temp'] ?> &deg;C
                         </p>
-                    </li>
-                    <li>
-                        <span>Wassertemperatur</span>
-                        <div class="thermos"></div>
-                        <p>
-                            <strong><?= $row7['celsius'] ?> &deg;C</strong>
-                        </p>
-                        <p>
-                            Min: <?= $row8['min_temp'] ?> &deg;C<br />
-                            Max: <?= $row8['max_temp'] ?> &deg;C
+                    </div>
+                </div>
+                <li>
+                    <span>Innentemperatur</span>
+                    <div class="thermos2"></div>
+                    <p>
+                        <strong><?= $row['celsius'] ?> &deg;C</strong>
+                    </p>
+                    <p>
+                        Min: <?= $row3['min_temp'] ?> &deg;C<br />
+                        Max: <?= $row3['max_temp'] ?> &deg;C
+                    </p>
+                </li>
+                <li>
+                    <span>Wassertemperatur</span>
+                    <div class="thermos"></div>
+                    <p>
+                        <strong><?= $row7['celsius'] ?> &deg;C</strong>
+                    </p>
+                    <p>
+                        Min: <?= $row8['min_temp'] ?> &deg;C<br />
+                        Max: <?= $row8['max_temp'] ?> &deg;C
 
-                        </p>
-                    </li>
+                    </p>
+                </li>
                 </ul>
 
             </div>
