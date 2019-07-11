@@ -131,7 +131,7 @@ include('dbconnect.php');
                             <div class="card-header">
                                         Aussentemperatur
                                     </div>
-                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <img class="card-img-top" src="temp.png" alt="Card image cap">
                                 <div class="card-body">
                                     <p>
                                         <strong><?= $row2['celsius'] ?> &deg;C</strong>
