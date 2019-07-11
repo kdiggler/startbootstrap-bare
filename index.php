@@ -109,6 +109,8 @@ include('dbconnect.php');
                 </div>
 
                 <h2>Sensoren</h2>
+                <div class="row">
+  <div class="col-sm-6">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
@@ -123,6 +125,7 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
+                <div class="col-sm-6">
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
@@ -136,6 +139,7 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
+                <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
                         Innentemperatur
@@ -152,6 +156,7 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
+                <div class="col-sm-6">
                 <div class="card">
                     <div class="card-header">
                         Wassertemperatur
@@ -168,7 +173,7 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
-
+</div>
 
             </div>
         </div>
