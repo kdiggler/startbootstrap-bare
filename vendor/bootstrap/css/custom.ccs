@@ -1,2 +1,5 @@
-#hum { background-position: 0px -640px;
+#hum { 
+    width: 128px;
+    height: 128px;
+    background-position: 0px -640px;
 }
