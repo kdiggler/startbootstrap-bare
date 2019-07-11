@@ -22,7 +22,7 @@ include('dbconnect.php');
 #hum {
   width: 128px;
   height: 128px;
-  background: url(sprite_new1.png) 0 -640;
+  background: url(sprite_new1.png) 0 0;
 }
 </style>
 </head>
