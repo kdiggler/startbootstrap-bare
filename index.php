@@ -109,10 +109,11 @@ include('dbconnect.php');
                 </div>
 
                 <h2>Sensoren</h2>
-                <ul class="devices">
-                    <li>
-                        <span>Luftfeuchtigkeit</span>
-                        <div class="plant"></div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Luftfeuchtigkeit</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <p>
                             <strong><?= $row5['relhum'] ?> %</strong>
                         </p>
@@ -120,7 +121,8 @@ include('dbconnect.php');
                             Min: <?= $row6['min_relhum'] ?> %<br />
                             Max: <?= $row6['max_relhum'] ?> %
                         </p>
-                    </li>
+                    </div>
+                </div>
                     <li>
                         <span>Aussentemperatur</span>
                         <div class="thermos"></div>
