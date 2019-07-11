@@ -152,30 +152,23 @@ include('dbconnect.php');
                         </p>
                     </div>
                 </div>
-                <li>
-                    <span>Innentemperatur</span>
-                    <div class="thermos2"></div>
-                    <p>
-                        <strong><?= $row['celsius'] ?> &deg;C</strong>
-                    </p>
-                    <p>
-                        Min: <?= $row3['min_temp'] ?> &deg;C<br />
-                        Max: <?= $row3['max_temp'] ?> &deg;C
-                    </p>
-                </li>
-                <li>
-                    <span>Wassertemperatur</span>
-                    <div class="thermos"></div>
-                    <p>
-                        <strong><?= $row7['celsius'] ?> &deg;C</strong>
-                    </p>
-                    <p>
-                        Min: <?= $row8['min_temp'] ?> &deg;C<br />
-                        Max: <?= $row8['max_temp'] ?> &deg;C
+                <div class="card">
+                    <div class="card-header">
+                        Wassertemperatur
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p>
+                            <strong><?= $row7['celsius'] ?> &deg;C</strong>
+                        </p>
+                        <p>
+                            Min: <?= $row8['min_temp'] ?> &deg;C<br />
+                            Max: <?= $row8['max_temp'] ?> &deg;C
 
-                    </p>
-                </li>
-                </ul>
+                        </p>
+                    </div>
+                </div>
+
 
             </div>
         </div>
