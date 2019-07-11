@@ -1,5 +1,5 @@
 #hum { 
     width: 128px;
     height: 128px;
-    background-position: 0px -640px;
+    background: url(sprite_new1.png)0 -640;
 }
