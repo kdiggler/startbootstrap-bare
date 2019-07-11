@@ -17,7 +17,7 @@ include('dbconnect.php');
     <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="vendor/bootstrap/css/custom.css" rel="stylesheet">
 
 </head>
