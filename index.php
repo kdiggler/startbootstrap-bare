@@ -138,7 +138,7 @@ include('dbconnect.php');
                             <div class="card-header">
                                 Aussentemperatur
                             </div>
-                            <img class="card-img-top" src="temp.png" alt="Card image cap">
+                            <img class="card-img-top" src="/images/pictogram/temp1.png" alt="Card image cap">
                             <div class="card-body">
                                 <p>
                                     <strong><?= $row2['celsius'] ?> &deg;C</strong>
@@ -155,9 +155,9 @@ include('dbconnect.php');
                             <div class="card-header">
                                 Innentemperatur
                             </div>
+                            <img class="card-img-top" src="/images/pictogram/temp1.png" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <p>
                                     <strong><?= $row['celsius'] ?> &deg;C</strong>
                                 </p>
