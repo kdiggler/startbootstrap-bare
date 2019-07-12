@@ -121,8 +121,8 @@ include('dbconnect.php');
                         <div class="card-header">
                         Luftfeuchtigkeit
                             </div>
-                            <img class="card-img-top-center" id="hum">
                             <div class="card-body">
+                            <img src="IMAGES/pictogram/hum1.png" alt="Hum1">
                                 <p>
                                     <strong><?= $row5['relhum'] ?> %</strong>
                                 </p>
@@ -156,9 +156,8 @@ include('dbconnect.php');
                             <div class="card-header">
                                 Innentemperatur
                             </div>
-                            <img class="card-img-top" src="IMAGES/pictogram/temp1.png" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
+                            <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
                                 <p>
                                     <strong><?= $row['celsius'] ?> &deg;C</strong>
                                 </p>
@@ -175,7 +174,7 @@ include('dbconnect.php');
                                 Wassertemperatur
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
+                            <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
                                 <p>
                                     <strong><?= $row7['celsius'] ?> &deg;C</strong>
                                 </p>
