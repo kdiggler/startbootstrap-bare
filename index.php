@@ -92,14 +92,19 @@ include('dbconnect.php');
 
                 <h2>LED's</h2>
                 <div class="row">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                        <img src="IMAGES/pictogram/led1.png" alt="Led1">
-                            <h5 class="card-title">LED Blau</h5>
-                            <p>
-                                <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                                <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
-                            </p>
+                    <div class="col-sm-3">
+                        <div class="card">
+                        <div class="card-header">
+                                Beleuchtung
+                            </div>
+                            <div class="card-body">
+                                <img src="IMAGES/pictogram/led1.png" alt="Led1">
+                                <h5 class="card-title">LED Blau</h5>
+                                <p>
+                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
+                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
