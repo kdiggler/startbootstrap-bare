@@ -22,7 +22,7 @@ include('dbconnect.php');
 #hum {
   width: 128px;
   height: 128px;
-  background: url(sprite_new1.png) 0 0;
+  background: url(sprite_new1.png) 0 640;
 }
 </style>
 </head>
@@ -117,7 +117,7 @@ include('dbconnect.php');
                 <h2>Sensoren</h2>
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                         <div class="card-header">
                         Luftfeuchtigkeit
                             </div>
@@ -134,7 +134,7 @@ include('dbconnect.php');
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
                             <div class="card-header">
                                 Aussentemperatur
                             </div>
