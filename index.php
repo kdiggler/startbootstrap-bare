@@ -17,14 +17,14 @@ include('dbconnect.php');
     <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-#hum {
-  width: 128px;
-  height: 128px;
-  background: url(sprite_new1.png) 0 640;
-}
-</style>
+        #hum {
+            width: 128px;
+            height: 128px;
+            background: url(sprite_new1.png) 0 640;
+        }
+    </style>
 </head>
 
 <body>
@@ -91,26 +91,16 @@ include('dbconnect.php');
                 <h1 class="mt-5">IDBI 037 Sensoren</h1>
 
                 <h2>LED's</h2>
-                <ul class="d-inline p-2 bg-dark text-white">
-                    <li>
-                        <span>LED Blau</span>
-                        <div class="diode"></div>
-                        <p>
-                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
-                        </p>
-                    </li>
-                </ul>
-
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">LED Blau</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>
-                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                            <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
-                        </p>
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <img src="IMAGES/pictogram/led1.png" alt="Led1">
+                            <h5 class="card-title">LED Blau</h5>
+                            <p>
+                                <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
+                                <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -118,12 +108,12 @@ include('dbconnect.php');
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="card">
-                        <div class="card-header">
-                        Luftfeuchtigkeit
+                            <div class="card-header">
+                                Luftfeuchtigkeit
                             </div>
                             <div class="card-body">
-                            <img src="IMAGES/pictogram/hum1.png" alt="Hum1">
-                                <p>
+                                <img src="IMAGES/pictogram/hum1.png" alt="Hum1">
+                                <p style="color:black;font-size:22px;">
                                     <strong><?= $row5['relhum'] ?> %</strong>
                                 </p>
                                 <p>
@@ -138,10 +128,10 @@ include('dbconnect.php');
                             <div class="card-header">
                                 Aussentemperatur
                             </div>
-                           
+
                             <div class="card-body">
-                            <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
-                                <p>
+                                <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
+                                <p style="color:black;font-size:22px;">
                                     <strong><?= $row2['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
@@ -157,8 +147,8 @@ include('dbconnect.php');
                                 Innentemperatur
                             </div>
                             <div class="card-body">
-                            <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
-                                <p style="color:blue;font-size:18px;">
+                                <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
+                                <p style="color:black;font-size:22px;">
                                     <strong><?= $row['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
@@ -174,8 +164,8 @@ include('dbconnect.php');
                                 Wassertemperatur
                             </div>
                             <div class="card-body">
-                            <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
-                                <p>
+                                <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
+                                <p style="color:black;font-size:22px;">
                                     <strong><?= $row7['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
