@@ -158,7 +158,7 @@ include('dbconnect.php');
                             </div>
                             <div class="card-body">
                             <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
-                                <p>
+                                <p style="color:blue;font-size:18px;">
                                     <strong><?= $row['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
