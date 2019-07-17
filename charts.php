@@ -48,6 +48,52 @@
             var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
+
+        function drawChart2() {
+            var json = $.ajax({
+                url: 'get_json2.php', // make this url point to the data file
+                dataType: 'json',
+                async: false
+            }).responseText;
+
+            // Create our data table out of JSON data loaded from server.
+            var data = new google.visualization.DataTable(json);
+            var options = {
+                title: 'Temp',
+                width: 950,
+                height: 550,
+                legend: {
+                    position: 'right'
+                }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            //do not forget to check ur div ID
+            var chart = new google.visualization.AreaChart(document.getElementById('chart2_div'));
+            chart.draw(data, options);
+        }
+
+        function drawChart3() {
+            var json = $.ajax({
+                url: 'get_json3.php', // make this url point to the data file
+                dataType: 'json',
+                async: false
+            }).responseText;
+
+            // Create our data table out of JSON data loaded from server.
+            var data = new google.visualization.DataTable(json);
+            var options = {
+                title: 'humidity1',
+                width: 950,
+                height: 550,
+                legend: {
+                    position: 'right'
+                }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            //do not forget to check ur div ID
+            var chart = new google.visualization.AreaChart(document.getElementById('chart3_div'));
+            chart.draw(data, options);
+        }
     </script>
 </head>
 
@@ -83,10 +129,15 @@
 
     <!-- Page Content -->
     <div class="container">
-        <p>Innentemperatur</p>
-        <div id="chart_div" style="width: 100%; height: 50%; margin: 25 15"></div>
-    </div>
+        <h2>Innentemperatur</h2>
+        <div id="chart_div" style="width: 100%; height: 50%"></div>
 
+        <h2>Aquariumtemperatur</h2>
+        <div id="chart2_div" style="width: 100%; height: 50%; margin: 25 15"></div>
+
+        <h2>Luftfeuchtigkeit</h2>
+        <div id="chart3_div" style="width: 100%; height: 50%; margin: 25 15"></div>
+    </div>
     <!-- Bootstrap core JavaScript 
     <script src="vendor/jquery/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
