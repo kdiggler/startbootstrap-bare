@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-include('dbconnect.php');
-?>
 
 <html lang="en">
 
@@ -16,7 +13,10 @@ include('dbconnect.php');
 
     <title>IDBI Büro 037</title>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
                <script type="text/javascript">
                 google.charts.load('current', {'packages':['corechart']});
@@ -87,10 +87,6 @@ include('dbconnect.php');
                                 chart.draw(data, options);
                         }
  </script>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
