@@ -16,7 +16,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
                <script type="text/javascript">
                 google.charts.load('current', {'packages':['corechart']});
@@ -120,25 +120,9 @@
     </nav>
 
     <!-- Page Content -->
-    <table>
-<tr>
 
-  <td>
-<h2>Innentemperatur</h2>
-<div id="chart_div" style="width: 100%; height: 50%; margin: 25 15"></div></td>
-</tr>
-<tr>
-<td>
-  <h2>Aquariumtemperatur</h2>
-<div id="chart2_div" style="width: 100%; height: 50%; margin: 25 15"></div></td>
-</tr>
-<tr>
-<td>
-  <h2>Luftfeuchtigkeit</h2>
-<div id="chart3_div" style="width: 100%; height: 50%; margin: 25 15"></div></td>
-</tr>
-
-</table>
+<p>Innentemperatur</p>
+<div id="chart_div" style="width: 100%; height: 50%; margin: 25 15"></div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
