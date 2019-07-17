@@ -70,7 +70,7 @@ include('dbconnect.php');
                         <a class="nav-link" href="#">Sensoren</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Diagramme</a>
+                        <a class="nav-link" href="charts.php">Diagramme</a>
                     </li>
                 </ul>
             </div>

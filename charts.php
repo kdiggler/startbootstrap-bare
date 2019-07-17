@@ -18,6 +18,38 @@ include('dbconnect.php');
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+	        google.charts.load('current', {'packages':['corechart']});
+      	        google.charts.setOnLoadCallback(drawChart);
+			function drawChart() {
+				var json = $.ajax({
+					url: 'get_json.php', // make this url point to the data file
+					dataType: 'json',
+					async: false
+				}).responseText;
+				
+				// Create our data table out of JSON data loaded from server.
+				var data = new google.visualization.DataTable(json);
+				var options = {
+					title: 'Temperatur Innen',
+					width: 1000,
+					height: 800,
+					
+					legend: {position: 'right'}
+				};
+				var formatter = new google.visualization.NumberFormat(
+  {negativeColor: 'red', negativeParens: true, groupingSymbol:','});
+formatter.format(data, 1);   
+				// Instantiate and draw our chart, passing in some options.
+				//do not forget to check ur div ID
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+			}
+		</script> 
+
 </head>
 
 <body>
@@ -35,15 +67,15 @@ include('dbconnect.php');
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About
-                            <span class="sr-only">(current)</span>
-                            </a>
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sensoren</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Diagramme</a>
+                        <a class="nav-link" href="#">Diagramme
+                        <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -51,16 +83,7 @@ include('dbconnect.php');
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">About this Page</h1>
-<p>
-Diese Seite wurde durch die Gruppe Betriebsinformatik erstellt
-</p>
-            </div>
-        </div>
-    </div>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
