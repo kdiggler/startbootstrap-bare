@@ -37,8 +37,6 @@
             var data = new google.visualization.DataTable(json);
             var options = {
                 title: 'Temp',
-                width: 950,
-                height: 550,
                 legend: {
                     position: 'right'
                 }
@@ -130,13 +128,13 @@
     <!-- Page Content -->
     <div class="container">
         <h2>Innentemperatur</h2>
-        <div id="chart_div" style="width: 100%; height: 50%"></div>
+        <div id="chart_div" style="width: 100%; height: 450px"></div>
 
         <h2>Aquariumtemperatur</h2>
-        <div id="chart2_div" style="width: 100%; height: 50%; margin: 25 15"></div>
+        <div id="chart2_div" style="width: 100%; height: 50%"></div>
 
         <h2>Luftfeuchtigkeit</h2>
-        <div id="chart3_div" style="width: 100%; height: 50%; margin: 25 15"></div>
+        <div id="chart3_div" style="width: 100%; height: 50%"></div>
     </div>
     <!-- Bootstrap core JavaScript -->
    <!-- <script src="vendor/jquery/jquery.slim.min.js"></script> -->
