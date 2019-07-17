@@ -138,9 +138,9 @@
         <h2>Luftfeuchtigkeit</h2>
         <div id="chart3_div" style="width: 100%; height: 50%; margin: 25 15"></div>
     </div>
-    <!-- Bootstrap core JavaScript 
+    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
