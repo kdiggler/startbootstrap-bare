@@ -93,10 +93,10 @@
             chart.draw(data, options);
         }
 
-        $(window).resize(function(){
-  drawChart1();
-  drawChart2();
-});
+        $(window).resize(function() {
+            drawChart();
+            drawChart2();
+        });
     </script>
 </head>
 
@@ -132,17 +132,19 @@
 
     <!-- Page Content -->
     <div class="container">
-        <h2>Innentemperatur</h2>
-        <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
+        <div class="row">
+            <h2>Innentemperatur</h2>
+            <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
 
-        <h2>Aquariumtemperatur</h2>
-        <div id="chart2_div" style="width: 100%; height: 50%; margin: 0"></div>
+            <h2>Aquariumtemperatur</h2>
+            <div id="chart2_div" style="width: 100%; height: 50%; margin: 0"></div>
 
-        <h2>Luftfeuchtigkeit</h2>
-        <div id="chart3_div" style="width: 100%; height: 50%; margin: 0"></div>
+            <h2>Luftfeuchtigkeit</h2>
+            <div id="chart3_div" style="width: 100%; height: 50%; margin: 0"></div>
+        </div>
     </div>
     <!-- Bootstrap core JavaScript -->
-   <!-- <script src="vendor/jquery/jquery.slim.min.js"></script> -->
+    <!-- <script src="vendor/jquery/jquery.slim.min.js"></script> -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
