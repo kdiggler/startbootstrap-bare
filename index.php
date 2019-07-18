@@ -19,14 +19,13 @@ include('dbconnect.php');
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .fixed-bottom {
-    position: fixed;
-    margin: auto;
-    height: 100px;
-    width: 100%;
-    right: 0;
-    bottom: 0;
-    left: 0;
+   footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color:#fff;
+}
 }
     </style>
 </head>
@@ -194,7 +193,7 @@ include('dbconnect.php');
         <p>Footer Text</p>
     </footer> -->
 
-    <footer class=" fixed-bottom  container">
+    <footer class="container">
   <div class="row">
     <div class="col-md-5">
       some content
