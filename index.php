@@ -18,6 +18,14 @@ include('dbconnect.php');
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -87,7 +95,7 @@ include('dbconnect.php');
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="card">
-                        <div class="card-header">
+                            <div class="card-header">
                                 Beleuchtung
                             </div>
                             <div class="card-body">
@@ -180,8 +188,8 @@ include('dbconnect.php');
     </div>
 
     <footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+        <p>Footer Text</p>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
