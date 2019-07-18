@@ -81,7 +81,7 @@ include('dbconnect.php');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-50">IDBI 037 Sensoren</h1>
+                <h1 class="mt-5">IDBI 037 Sensoren</h1>
 
                 <h2>LED's</h2>
                 <div class="row">
