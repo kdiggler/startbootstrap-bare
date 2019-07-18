@@ -187,9 +187,20 @@ include('dbconnect.php');
         </div>
     </div>
 
-    <footer class="container-fluid text-center">
+    <!-- <footer class="container-fluid text-center">
         <p>Footer Text</p>
-    </footer>
+    </footer> -->
+
+    <footer class=" fixed-bottom  container">
+  <div class="row">
+    <div class="col-md-5">
+      some content
+    </div>
+    <div class="col-md-7">    
+      some content
+    </div>
+  </div>
+</footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
