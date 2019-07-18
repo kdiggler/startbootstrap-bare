@@ -130,13 +130,13 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <h2>Innentemperatur</h2>
+            <h2 class="mt-5">Innentemperatur</h2>
             <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
 
-            <h2>Aquariumtemperatur</h2>
+            <h2 class="mt-5">Aquariumtemperatur</h2>
             <div id="chart2_div" style="width: 100%; height: 450px; margin: 0"></div>
 
-            <h2>Luftfeuchtigkeit</h2>
+            <h2 class="mt-5">Luftfeuchtigkeit</h2>
             <div id="chart3_div" style="width: 100%; height: 450px; margin: 0"></div>
         </div>
     </div>
