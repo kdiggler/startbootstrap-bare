@@ -25,6 +25,16 @@ include('dbconnect.php');
             color: white;
             padding: 15px;
         }
+        .fixed-bottom {
+    position: fixed;
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
     </style>
 </head>
 
