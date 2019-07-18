@@ -19,13 +19,8 @@ include('dbconnect.php');
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-   footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
-  color:#fff;
-}
+main {
+  min-height: calc(100vh - 48px);
 }
     </style>
 </head>
@@ -87,6 +82,7 @@ include('dbconnect.php');
         </div>
     </nav>
 
+    <main id="content-main" class="bg-primary">
     <!-- Page Content -->
     <div class="container">
         <div class="row">
@@ -188,21 +184,14 @@ include('dbconnect.php');
             </div>
         </div>
     </div>
-
+</main>
     <!-- <footer class="container-fluid text-center">
         <p>Footer Text</p>
     </footer> -->
 
-    <footer class="container">
-  <div class="row">
-    <div class="col-md-5">
-      some content
+    <div id="footer" class="bg-danger ">
+    ...code here...
     </div>
-    <div class="col-md-7">    
-      some content
-    </div>
-  </div>
-</footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
