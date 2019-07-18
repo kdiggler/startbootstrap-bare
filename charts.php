@@ -92,6 +92,11 @@
             var chart = new google.visualization.AreaChart(document.getElementById('chart3_div'));
             chart.draw(data, options);
         }
+
+        $(window).resize(function(){
+  drawChart1();
+  drawChart2();
+});
     </script>
 </head>
 
