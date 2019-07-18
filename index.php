@@ -19,12 +19,6 @@ include('dbconnect.php');
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
         .fixed-bottom {
     position: fixed;
     margin: auto;
@@ -33,7 +27,6 @@ include('dbconnect.php');
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1030;
 }
     </style>
 </head>
