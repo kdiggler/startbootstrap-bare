@@ -128,13 +128,13 @@
     <!-- Page Content -->
     <div class="container">
         <h2>Innentemperatur</h2>
-        <div id="chart_div" style="width: 100%; height: 450px"></div>
+        <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
 
         <h2>Aquariumtemperatur</h2>
-        <div id="chart2_div" style="width: 100%; height: 50%"></div>
+        <div id="chart2_div" style="width: 100%; height: 50%; margin: 0"></div>
 
         <h2>Luftfeuchtigkeit</h2>
-        <div id="chart3_div" style="width: 100%; height: 50%"></div>
+        <div id="chart3_div" style="width: 100%; height: 50%; margin: 0"></div>
     </div>
     <!-- Bootstrap core JavaScript -->
    <!-- <script src="vendor/jquery/jquery.slim.min.js"></script> -->
