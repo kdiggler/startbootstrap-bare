@@ -82,7 +82,7 @@ main {
         </div>
     </nav>
 
-    <main id="content-main" class="bg-primary">
+    <main id="content-main">
     <!-- Page Content -->
     <div class="container">
         <div class="row">
@@ -189,7 +189,7 @@ main {
         <p>Footer Text</p>
     </footer> -->
 
-    <div id="footer" class="bg-danger ">
+    <div id="footer">
     ...code here...
     </div>
 
