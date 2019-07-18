@@ -58,8 +58,6 @@
             var data = new google.visualization.DataTable(json);
             var options = {
                 title: 'Temp',
-                width: 950,
-                height: 550,
                 legend: {
                     position: 'right'
                 }
@@ -81,8 +79,6 @@
             var data = new google.visualization.DataTable(json);
             var options = {
                 title: 'humidity1',
-                width: 950,
-                height: 550,
                 legend: {
                     position: 'right'
                 }
@@ -96,6 +92,7 @@
         $(window).resize(function() {
             drawChart();
             drawChart2();
+            drawChart3();
         });
     </script>
 </head>
@@ -118,7 +115,7 @@
                         <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sensoren</a>
+                        <a class="nav-link" href="index.php">Sensoren</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Diagramme
@@ -137,10 +134,10 @@
             <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
 
             <h2>Aquariumtemperatur</h2>
-            <div id="chart2_div" style="width: 100%; height: 50%; margin: 0"></div>
+            <div id="chart2_div" style="width: 100%; height: 450px; margin: 0"></div>
 
             <h2>Luftfeuchtigkeit</h2>
-            <div id="chart3_div" style="width: 100%; height: 50%; margin: 0"></div>
+            <div id="chart3_div" style="width: 100%; height: 450px; margin: 0"></div>
         </div>
     </div>
     <!-- Bootstrap core JavaScript -->
