@@ -20,7 +20,7 @@ include('dbconnect.php');
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
         main {
-            min-height: calc(100vh - 120px);
+            min-height: calc(100vh - 100px);
         }
     </style>
 </head>
