@@ -213,7 +213,7 @@ body {
                 </div>
             </div>
         </div>
-    <div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
+    <div class="footer">D'Site isch vor Gruppe BI designt u programmiert ,<strong>no cöpyreit 2019</strong>.</div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
