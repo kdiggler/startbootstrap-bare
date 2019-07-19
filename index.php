@@ -19,9 +19,39 @@ include('dbconnect.php');
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        main {
-            min-height: calc(100vh - 100px);
-        }
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
     </style>
 </head>
 
@@ -82,7 +112,6 @@ include('dbconnect.php');
         </div>
     </nav>
 
-    <main id="content-main">
         <!-- Page Content -->
         <div class="container">
             <div class="row">
@@ -184,14 +213,7 @@ include('dbconnect.php');
                 </div>
             </div>
         </div>
-    </main>
-    <!-- <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-    </footer> -->
-
-    <div id="footer">
-        ...code here...
-    </div>
+    <div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
