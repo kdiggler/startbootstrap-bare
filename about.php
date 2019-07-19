@@ -18,6 +18,42 @@ include('dbconnect.php');
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+            padding-bottom: 6rem;
+            min-height: 100%;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+
+        /**
+ * Footer Styles
+ */
+
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: #efefef;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +73,7 @@ include('dbconnect.php');
                     <li class="nav-item active">
                         <a class="nav-link" href="#">About
                             <span class="sr-only">(current)</span>
-                            </a>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Sensoren</a>
@@ -55,12 +91,15 @@ include('dbconnect.php');
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">About this Page</h1>
-<p>
-Diese Seite wurde durch die Gruppe Betriebsinformatik erstellt
-</p>
+                <p>
+                    Diese Seite wurde durch die Gruppe Betriebsinformatik erstellt
+                </p>
             </div>
         </div>
     </div>
+
+    <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>

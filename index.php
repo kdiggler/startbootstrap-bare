@@ -19,39 +19,39 @@ include('dbconnect.php');
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
 
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
+        body {
+            position: relative;
+            margin: 0;
+            padding-bottom: 6rem;
+            min-height: 100%;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
 
 
-/**
+        /**
  * Footer Styles
  */
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: #efefef;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -112,108 +112,108 @@ body {
         </div>
     </nav>
 
-        <!-- Page Content -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h1 class="mt-5">IDBI 037 Sensoren</h1>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">IDBI 037 Sensoren</h1>
 
-                    <h2 class="mt-5">LED's</h2>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    Beleuchtung
-                                </div>
-                                <div class="card-body">
-                                    <img src="IMAGES/pictogram/led1.png" alt="Led1">
-                                    <h5 class="card-title">LED Blau</h5>
-                                    <p>
-                                        <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                                        <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
-                                    </p>
-                                </div>
+                <h2 class="mt-5">LED's</h2>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Beleuchtung
+                            </div>
+                            <div class="card-body">
+                                <img src="IMAGES/pictogram/led1.png" alt="Led1">
+                                <h5 class="card-title">LED Blau</h5>
+                                <p>
+                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
+                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <h2 class="mt-5">Sensoren</h2>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    Luftfeuchtigkeit
-                                </div>
-                                <div class="card-body">
-                                    <img src="IMAGES/pictogram/hum1.png" alt="Hum1">
-                                    <p style="color:black;font-size:22px;">
-                                        <strong><?= $row5['relhum'] ?> %</strong>
-                                    </p>
-                                    <p>
-                                        Min: <?= $row6['min_relhum'] ?> %<br />
-                                        Max: <?= $row6['max_relhum'] ?> %
-                                    </p>
-                                </div>
+                <h2 class="mt-5">Sensoren</h2>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Luftfeuchtigkeit
+                            </div>
+                            <div class="card-body">
+                                <img src="IMAGES/pictogram/hum1.png" alt="Hum1">
+                                <p style="color:black;font-size:22px;">
+                                    <strong><?= $row5['relhum'] ?> %</strong>
+                                </p>
+                                <p>
+                                    Min: <?= $row6['min_relhum'] ?> %<br />
+                                    Max: <?= $row6['max_relhum'] ?> %
+                                </p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    Aussentemperatur
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Aussentemperatur
+                            </div>
 
-                                <div class="card-body">
-                                    <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
-                                    <p style="color:black;font-size:22px;">
-                                        <strong><?= $row2['celsius'] ?> &deg;C</strong>
-                                    </p>
-                                    <p>
-                                        Min: <?= $row4['min_temp'] ?> &deg;C<br />
-                                        Max: <?= $row4['max_temp'] ?> &deg;C
-                                    </p>
-                                </div>
+                            <div class="card-body">
+                                <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
+                                <p style="color:black;font-size:22px;">
+                                    <strong><?= $row2['celsius'] ?> &deg;C</strong>
+                                </p>
+                                <p>
+                                    Min: <?= $row4['min_temp'] ?> &deg;C<br />
+                                    Max: <?= $row4['max_temp'] ?> &deg;C
+                                </p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    Innentemperatur
-                                </div>
-                                <div class="card-body">
-                                    <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
-                                    <p style="color:black;font-size:22px;">
-                                        <strong><?= $row['celsius'] ?> &deg;C</strong>
-                                    </p>
-                                    <p>
-                                        Min: <?= $row3['min_temp'] ?> &deg;C<br />
-                                        Max: <?= $row3['max_temp'] ?> &deg;C
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Innentemperatur
+                            </div>
+                            <div class="card-body">
+                                <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
+                                <p style="color:black;font-size:22px;">
+                                    <strong><?= $row['celsius'] ?> &deg;C</strong>
+                                </p>
+                                <p>
+                                    Min: <?= $row3['min_temp'] ?> &deg;C<br />
+                                    Max: <?= $row3['max_temp'] ?> &deg;C
+                                </p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                                <div class="card-header">
-                                    Wassertemperatur
-                                </div>
-                                <div class="card-body">
-                                    <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
-                                    <p style="color:black;font-size:22px;">
-                                        <strong><?= $row7['celsius'] ?> &deg;C</strong>
-                                    </p>
-                                    <p>
-                                        Min: <?= $row8['min_temp'] ?> &deg;C<br />
-                                        Max: <?= $row8['max_temp'] ?> &deg;C
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Wassertemperatur
+                            </div>
+                            <div class="card-body">
+                                <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
+                                <p style="color:black;font-size:22px;">
+                                    <strong><?= $row7['celsius'] ?> &deg;C</strong>
+                                </p>
+                                <p>
+                                    Min: <?= $row8['min_temp'] ?> &deg;C<br />
+                                    Max: <?= $row8['max_temp'] ?> &deg;C
 
-                                    </p>
-                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <div class="footer">D'Site isch vor Gruppe BI designt u programmiert ,<strong>no cöpyreit 2019</strong>.</div>
+    </div>
+    <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
