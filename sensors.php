@@ -93,16 +93,16 @@ include('dbconnect.php');
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sensors.php">Sensoren</a>
+                    <li class="nav-item avtive">
+                        <a class="nav-link" href="#">Sensoren
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.php">Diagramme</a>
@@ -117,26 +117,6 @@ include('dbconnect.php');
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">IDBI 037 Sensoren</h1>
-
-                <h2 class="mt-5">LED's</h2>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="card-header">
-                                Beleuchtung
-                            </div>
-                            <div class="card-body">
-                                <img src="IMAGES/pictogram/led1.png" alt="Led1">
-                                <h5 class="card-title">LED Blau</h5>
-                                <p>
-                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <h2 class="mt-5">Sensoren</h2>
                 <div class="row">
                     <div class="col-sm-3">

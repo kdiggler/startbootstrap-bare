@@ -151,7 +151,7 @@
                         <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Sensoren</a>
+                        <a class="nav-link" href="sensors.php">Sensoren</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Diagramme
