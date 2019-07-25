@@ -168,7 +168,7 @@ include('dbconnect.php');
                                     <strong><?= $row2['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
-                                    Min: <?= $row4['min_temp'] ?> &deg;C<br />
+                                    Min: <?= $row?> &deg;C<br />
                                     Max: <?= $row4['max_temp'] ?> &deg;C
                                 </p>
                             </div>
@@ -180,6 +180,7 @@ include('dbconnect.php');
                                 Innentemperatur
                             </div>
                             <div class="card-body">
+                                <p>TOP 5 Tage</p>
                                 <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
                                 <p style="color:black;font-size:22px;">
                                     <strong><?= $row['celsius'] ?> &deg;C</strong>
