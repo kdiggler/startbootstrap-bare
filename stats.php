@@ -183,7 +183,7 @@ include('dbconnect.php');
                                 <p>TOP 5 Tage</p>
                                 <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
                                 <p style="color:black;font-size:22px;">
-                                    <strong><?= $row['celsius'] ?> &deg;C</strong>
+                                    <strong><?= $row?> &deg;C</strong>
                                 </p>
                                 <p>
                                     Min: <?= $row3['min_temp'] ?> &deg;C<br />
