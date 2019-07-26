@@ -10,7 +10,7 @@ function tempindoor()
         exit();
     }
 
-   $query = "SELECT MAX(celsius) AS celsius, event, DATE(event) AS date_created FROM temperatures GROUP BY DATE(event) ORDER BY celsius desc LIMIT 5";
+   $query = "SELECT MAX(celsius) AS celsius, event, DATE(event) AS date_created FROM temperatures GROUP BY DATE(event) ORDER BY date_created desc LIMIT 5";
     # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM temperature ORDER BY celsius desc LIMIT 5";
 
     if ($result = mysqli_query($con, $query)) {
