@@ -180,7 +180,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>TOP 5 Tage</p>
                                 <p style="color:black;font-size:22px;">
-                                    <strong><?= temptest(); ?> &deg;C</strong>
+                                    <?= temptest(); ?>
                                 </p>
                                 <p>
                                     Min: <?= $row3['min_temp'] ?> &deg;C<br />
