@@ -188,6 +188,7 @@ include('dbconnect.php');
                                         while ($row = mysqli_fetch_assoc($result)) {
                                             printf("%s\n", $row["celsius"]);
                                         }
+                                    }
                                         ?>
                                     </p>
                                     <p>
