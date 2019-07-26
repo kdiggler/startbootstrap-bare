@@ -8,13 +8,13 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-$query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc LIMIT 5";
+$query = "SELECT ROUND(celsius, 1) AS celsius, event FROM temperature ORDER BY celsius desc LIMIT 5";
 
 if ($result = mysqli_query($con, $query)) {
 
     /* fetch associative array */
     while ($row = mysqli_fetch_row($result)) {
-        printf ("%s\n", $row[0]);
+        printf ("%s (%s)\n", $row[0], $row[1]);
     }
 }
 
