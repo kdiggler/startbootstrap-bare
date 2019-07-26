@@ -58,9 +58,10 @@ include('dbconnect.php');
 <body>
 
     <?php
-    $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc limit 5";
+    $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY id desc";
+    #$query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc limit 5";
     $result = mysqli_query($con, $query);
-    $row = mysqli_fetch_all($result);
+    $row = mysqli_fetch_assoc($result);
     $query = "SELECT ROUND(celsius, 1) AS celsius FROM aquatemp ORDER BY id desc";
     $result = mysqli_query($con, $query);
     $row7 =  mysqli_fetch_assoc($result);
@@ -182,7 +183,7 @@ include('dbconnect.php');
                             <div class="card-body">
                                 <p>TOP 5 Tage</p>
                                 <p style="color:black;font-size:22px;">
-                                    <strong><?= $row['celsius']?> &deg;C</strong>
+                                    <strong><?= $row['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
                                     Min: <?= $row3['min_temp'] ?> &deg;C<br />
