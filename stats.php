@@ -117,7 +117,7 @@ include('functions.php');
                 <h1 class="mt-5">Statistiken</h1>
                 <h2 class="mt-5">Stats</h2>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
                                 Luftfeuchtigkeit
@@ -134,7 +134,7 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
                                 Aussentemperatur
@@ -152,20 +152,31 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
                                 Innentemperatur
                             </div>
                             <div class="card-body">
                                 <p>TOP 5 Tage</p>
-                                <p style="color:black;font-size:22px;">
-                                    <?= temptest(); ?>
-                                </p>
+                                <p style="color:black;font-size:22px;"></p>
+
+                                <table class="table table-striped w-auto">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temperatur °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= temptest(); ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
                                 Wassertemperatur
