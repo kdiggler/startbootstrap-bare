@@ -58,7 +58,7 @@ include('dbconnect.php');
 <body>
 
     <?php
-    $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY id desc";
+    $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc";
     #$query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc limit 5";
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_assoc($result);
