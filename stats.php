@@ -115,26 +115,6 @@ include('functions.php');
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">Statistiken</h1>
-
-                <h2 class="mt-5">LED's</h2>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="card-header">
-                                Beleuchtung
-                            </div>
-                            <div class="card-body">
-                                <img src="IMAGES/pictogram/led1.png" alt="Led1">
-                                <h5 class="card-title">LED Blau</h5>
-                                <p>
-                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_1>" role="button">An</a>
-                                    <a class="btn btn-secondary" href="ledonoff.php?state=<led2_0>" role="button">Aus</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <h2 class="mt-5">Stats</h2>
                 <div class="row">
                     <div class="col-sm-3">
@@ -181,10 +161,6 @@ include('functions.php');
                                 <p>TOP 5 Tage</p>
                                 <p style="color:black;font-size:22px;">
                                     <?= temptest(); ?>
-                                </p>
-                                <p>
-                                    Min: <?= $row3['min_temp'] ?> &deg;C<br />
-                                    Max: <?= $row3['max_temp'] ?> &deg;C
                                 </p>
                             </div>
                         </div>

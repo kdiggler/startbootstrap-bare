@@ -19,7 +19,6 @@ function temptest()
         /* fetch associative array */
         while ($row = mysqli_fetch_assoc($result)) {
             echo"<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
-            #echo $row[0] . " " . $row[1] . "<br/>";
         }
         echo"</table>";
     }
