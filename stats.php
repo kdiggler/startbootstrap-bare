@@ -180,7 +180,7 @@ include('dbconnect.php');
                                 <p>TOP 5 Tage</p>
                                 <p style="color:black;font-size:22px;">
 
-                                    <? $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc LIMIT 5";
+                                    <? $query = "SELECT celsius FROM temperature ORDER BY celsius desc LIMIT 5";
 
                                     if ($result = mysqli_query($con, $query)) {
 
