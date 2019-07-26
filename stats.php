@@ -58,9 +58,6 @@ include('dbconnect.php');
 <body>
 
     <?php
-    $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc LIMIT 5";
-    $result = mysqli_query($con, $query);
-    $row = mysqli_fetch_assoc($result));
     $query = "SELECT ROUND(celsius, 1) AS celsius FROM aquatemp ORDER BY id desc";
     $result = mysqli_query($con, $query);
     $row7 =  mysqli_fetch_assoc($result);
@@ -194,8 +191,8 @@ include('dbconnect.php');
                                         ?>
                                     </p>
                                     <p>
-                                        Min: < ?=$row3 ['min_temp'] ?> &deg;C<br />
-                                            Max: <?= $row3['max_temp'] ?> &deg;C
+                                        Min: <?= $row3['min_temp'] ?> &deg;C<br />
+                                        Max: <?= $row3['max_temp'] ?> &deg;C
                                     </p>
                                 </div>
                             </div>
