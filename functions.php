@@ -33,8 +33,8 @@ function tempaqua()
         printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
     }
-
-    $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM aquatemp ORDER BY celsius desc LIMIT 5";
+    $query = "SELECT MAX(celsius) AS celsius, event, DATE(event) AS date_created FROM aquatemp GROUP BY DATE(event) ORDER BY celsius desc LIMIT 5";
+   # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM aquatemp ORDER BY celsius desc LIMIT 5";
 
     if ($result = mysqli_query($con, $query)) {
         while ($row = mysqli_fetch_assoc($result)) {
