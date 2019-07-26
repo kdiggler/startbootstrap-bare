@@ -21,9 +21,10 @@ function temptest()
             echo "<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
             #echo $row[0] . " " . $row[1] . "<br/>";
         }
-        echo"</table>"
+        echo"</table>";
     }
 
     /* close connection */
     mysqli_close($link);
 }
+?>
