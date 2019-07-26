@@ -13,12 +13,12 @@ function temptest()
 
     if ($result = mysqli_query($con, $query)) {
 
-        echo "<table border=1>";
-        echo "<tr><td>Datum</td><td>Temperatur °C</td></tr>\n";
+        echo"<table border=1>";
+        echo"<tr><td>Datum</td><td>Temperatur °C</td></tr>\n";
 
         /* fetch associative array */
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
+            echo"<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
             #echo $row[0] . " " . $row[1] . "<br/>";
         }
         echo"</table>";
