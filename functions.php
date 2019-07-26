@@ -13,7 +13,7 @@ function temptest()
 
     if ($result = mysqli_query($con, $query)) {
 
-        echo"<table border=1>";
+        echo"<table border=0>";
         echo"<tr><td>Datum</td><td>Temperatur °C</td></tr>\n";
 
         /* fetch associative array */
