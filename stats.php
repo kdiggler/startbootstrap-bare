@@ -59,9 +59,6 @@ include('functions.php');
 <body>
 
     <?php
-    $query = "SELECT ROUND(celsius, 1) AS celsius FROM aquatemp ORDER BY id desc";
-    $result = mysqli_query($con, $query);
-    $row7 =  mysqli_fetch_assoc($result);
     $query = "SELECT celsius FROM temperatur2 ORDER BY id desc";
     $result = mysqli_query($con, $query);
     $row2 =  mysqli_fetch_assoc($result);
@@ -140,7 +137,7 @@ include('functions.php');
                                 Innentemperatur
                             </div>
                             <div class="card-body">
-                                <p>TOP 5 Tage</p>
+                                <p>TOP 5</p>
                                 <p style="color:black;font-size:22px;"></p>
 
                                 <table class="table table-striped w-auto">
@@ -152,7 +149,7 @@ include('functions.php');
                                     </thead>
 
                                     <tbody>
-                                        <?= temptest(); ?>
+                                        <?= tempindoor(); ?>
                                     </tbody>
                                 </table>
                             </div>
@@ -164,15 +161,21 @@ include('functions.php');
                                 Wassertemperatur
                             </div>
                             <div class="card-body">
-                                <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
-                                <p style="color:black;font-size:22px;">
-                                    <strong><?= $row7['celsius'] ?> &deg;C</strong>
-                                </p>
-                                <p>
-                                    Min: <?= $row8['min_temp'] ?> &deg;C<br />
-                                    Max: <?= $row8['max_temp'] ?> &deg;C
+                            <p>TOP 5</p>
+                                <p style="color:black;font-size:22px;"></p>
 
-                                </p>
+                                <table class="table table-striped w-auto">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temperatur °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= tempaqua(); ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
