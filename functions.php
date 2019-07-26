@@ -14,7 +14,8 @@ if ($result = mysqli_query($con, $query)) {
 
     /* fetch associative array */
     while ($row = mysqli_fetch_row($result)) {
-        printf ("%s (%s)\n", $row[0], $row[1]);
+        echo $row[0]." ".$row[1]."<br/>";
+       # printf ("%s (%s)\n", $row[0], $row[1]);
     }
 }
 
