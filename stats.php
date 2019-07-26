@@ -59,9 +59,8 @@ include('dbconnect.php');
 
     <?php
     $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc LIMIT 5";
-    #$query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc limit 5";
     $result = mysqli_query($con, $query);
-    $row = mysqli_fetch_assoc($result);
+    $row = mysqli_fetch_assoc($result));
     $query = "SELECT ROUND(celsius, 1) AS celsius FROM aquatemp ORDER BY id desc";
     $result = mysqli_query($con, $query);
     $row7 =  mysqli_fetch_assoc($result);
@@ -169,7 +168,7 @@ include('dbconnect.php');
                                     <strong><?= $row2['celsius'] ?> &deg;C</strong>
                                 </p>
                                 <p>
-                                    Min: <?= $row?> &deg;C<br />
+                                    Min: <?= $row ?> &deg;C<br />
                                     Max: <?= $row4['max_temp'] ?> &deg;C
                                 </p>
                             </div>
@@ -183,43 +182,52 @@ include('dbconnect.php');
                             <div class="card-body">
                                 <p>TOP 5 Tage</p>
                                 <p style="color:black;font-size:22px;">
-                                    <strong><?= $row['celsius'] ?> &deg;C</strong>
-                                </p>
-                                <p>
-                                    Min: <?= $row3['min_temp'] ?> &deg;C<br />
-                                    Max: <?= $row3['max_temp'] ?> &deg;C
-                                </p>
+
+                                    <? $query = "SELECT ROUND(celsius, 1) AS celsius FROM temperature ORDER BY celsius desc LIMIT 5";
+
+                                    if ($result = mysqli_query($con, $query)) {
+
+                                        /* fetch associative array */
+                                        while ($row = mysqli_fetch_assoc($result)) {
+                                            printf($row["celsius"]);
+                                        }
+                                        ?>
+                                    </p>
+                                    <p>
+                                        Min: < ?=$row3 ['min_temp'] ?> &deg;C<br />
+                                            Max: <?= $row3['max_temp'] ?> &deg;C
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                            <div class="card-header">
-                                Wassertemperatur
-                            </div>
-                            <div class="card-body">
-                                <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
-                                <p style="color:black;font-size:22px;">
-                                    <strong><?= $row7['celsius'] ?> &deg;C</strong>
-                                </p>
-                                <p>
-                                    Min: <?= $row8['min_temp'] ?> &deg;C<br />
-                                    Max: <?= $row8['max_temp'] ?> &deg;C
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-header">
+                                    Wassertemperatur
+                                </div>
+                                <div class="card-body">
+                                    <img src="IMAGES/pictogram/temp2.png" alt="Temp2">
+                                    <p style="color:black;font-size:22px;">
+                                        <strong><?= $row7['celsius'] ?> &deg;C</strong>
+                                    </p>
+                                    <p>
+                                        Min: <?= $row8['min_temp'] ?> &deg;C<br />
+                                        Max: <?= $row8['max_temp'] ?> &deg;C
 
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
+        <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.slim.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</body>
+    </body>
 
-</html>
+    </html>
