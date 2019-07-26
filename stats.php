@@ -137,24 +137,6 @@ include('functions.php');
                     <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
-                                Aussentemperatur
-                            </div>
-
-                            <div class="card-body">
-                                <img src="IMAGES/pictogram/temp1.png" alt="Temp1">
-                                <p style="color:black;font-size:22px;">
-                                    <strong><?= $row2['celsius'] ?> &deg;C</strong>
-                                </p>
-                                <p>
-                                    Min: <?= $row ?> &deg;C<br />
-                                    Max: <?= $row4['max_temp'] ?> &deg;C
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-header">
                                 Innentemperatur
                             </div>
                             <div class="card-body">
