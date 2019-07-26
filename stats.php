@@ -186,7 +186,7 @@ include('dbconnect.php');
 
                                         /* fetch associative array */
                                         while ($row = mysqli_fetch_assoc($result)) {
-                                            printf($row["celsius"]);
+                                            printf("%s\n", $row["celsius"]);
                                         }
                                         ?>
                                     </p>
