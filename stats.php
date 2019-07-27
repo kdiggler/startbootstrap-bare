@@ -123,7 +123,7 @@ include('functions.php');
                                         <thead>
                                             <tr>
                                                 <th>Datum</th>
-                                                <th>Luftfeuchtigkeit</th>
+                                                <th>Hum %</th>
                                             </tr>
                                         </thead>
 
