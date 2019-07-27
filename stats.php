@@ -166,10 +166,6 @@ include('functions.php');
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Statistiken</h1>
-                <h2 class="mt-5">Stats</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
