@@ -71,9 +71,6 @@ include('functions.php');
     $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM aquatemp";
     $result = mysqli_query($con, $query);
     $row8 =  mysqli_fetch_assoc($result);
-    $query = "SELECT ROUND(relhum, 0) AS relhum FROM humidity ORDER BY id desc";
-    $result = mysqli_query($con, $query);
-    $row5 =  mysqli_fetch_assoc($result);
     $query = "SELECT ROUND(max(relhum), 0) AS max_relhum, ROUND(min(relhum), 0) AS min_relhum FROM humidity";
     $result = mysqli_query($con, $query);
     $row6 =  mysqli_fetch_assoc($result);
@@ -120,14 +117,19 @@ include('functions.php');
                                 Luftfeuchtigkeit
                             </div>
                             <div class="card-body">
-                                <img src="IMAGES/pictogram/hum1.png" alt="Hum1">
                                 <p style="color:black;font-size:22px;">
-                                    <strong><?= $row5['relhum'] ?> %</strong>
-                                </p>
-                                <p>
-                                    Min: <?= $row6['min_relhum'] ?> %<br />
-                                    Max: <?= $row6['max_relhum'] ?> %
-                                </p>
+                                    <table class="table table-striped w-auto">
+                                        <thead>
+                                            <tr>
+                                                <th>Datum</th>
+                                                <th>Luftfeuchtigkeit</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <?= relhum(); ?>
+                                        </tbody>
+                                    </table>
                             </div>
                         </div>
                     </div>
@@ -161,7 +163,7 @@ include('functions.php');
                                 Wassertemperatur
                             </div>
                             <div class="card-body">
-                            <p>TOP 5</p>
+                                <p>TOP 5</p>
                                 <p style="color:black;font-size:22px;"></p>
 
                                 <table class="table table-striped w-auto">
