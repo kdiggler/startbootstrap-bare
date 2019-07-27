@@ -117,6 +117,7 @@ include('functions.php');
                                 Luftfeuchtigkeit
                             </div>
                             <div class="card-body">
+                                <p>TOP 5</p>
                                 <p style="color:black;font-size:22px;">
                                     <table class="table table-striped w-auto">
                                         <thead>
