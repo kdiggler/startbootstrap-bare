@@ -143,11 +143,11 @@ include('functions.php');
                                 <p>TOP 5</p>
                                 <p style="color:black;font-size:22px;"></p>
 
-                                <table class="table table-striped w-auto">
+                                <table class="table table-striped w-100">
                                     <thead>
                                         <tr>
                                             <th>Datum</th>
-                                            <th>Temperatur °C</th>
+                                            <th>Temp °C</th>
                                         </tr>
                                     </thead>
 
@@ -167,11 +167,11 @@ include('functions.php');
                                 <p>TOP 5</p>
                                 <p style="color:black;font-size:22px;"></p>
 
-                                <table class="table table-striped w-auto">
+                                <table class="table table-striped w-100">
                                     <thead>
                                         <tr>
                                             <th>Datum</th>
-                                            <th>Temperatur °C</th>
+                                            <th>Temp °C</th>
                                         </tr>
                                     </thead>
 
