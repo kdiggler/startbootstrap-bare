@@ -56,8 +56,7 @@ function relhum()
         printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
     }
-    $query = "SELECT MAX(relhum) AS relhum, DATE(event) AS date_created FROM humidity GROUP BY DATE(event) ORDER BY relhum desc LIMIT 5";
-   # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM aquatemp ORDER BY celsius desc LIMIT 5";
+    $query = "SELECT MAX(relhum) AS relhum, DATE(event) AS date_created FROM humidity GROUP BY DATE(event) ORDER BY id desc LIMIT 5";
 
     if ($result = mysqli_query($con, $query)) {
         while ($row = mysqli_fetch_assoc($result)) {
