@@ -58,24 +58,6 @@ include('functions.php');
 
 <body>
 
-    <?php
-    $query = "SELECT celsius FROM temperatur2 ORDER BY id desc";
-    $result = mysqli_query($con, $query);
-    $row2 =  mysqli_fetch_assoc($result);
-    $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM temperature";
-    $result = mysqli_query($con, $query);
-    $row3 =  mysqli_fetch_assoc($result);
-    $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM temperatur2";
-    $result = mysqli_query($con, $query);
-    $row4 =  mysqli_fetch_assoc($result);
-    $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM aquatemp";
-    $result = mysqli_query($con, $query);
-    $row8 =  mysqli_fetch_assoc($result);
-    $query = "SELECT ROUND(max(relhum), 0) AS max_relhum, ROUND(min(relhum), 0) AS min_relhum FROM humidity";
-    $result = mysqli_query($con, $query);
-    $row6 =  mysqli_fetch_assoc($result);
-    ?>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
@@ -184,6 +166,85 @@ include('functions.php');
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5">Statistiken</h1>
+                <h2 class="mt-5">Stats</h2>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Luftfeuchtigkeit
+                            </div>
+                            <div class="card-body">
+                                <p>MIN 5</p>
+                                <p style="color:black;font-size:22px;"></p>
+                                    <table class="table table-striped w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Datum</th>
+                                                <th>Hum %</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <?= relhum_min(); ?>
+                                        </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Innentemperatur
+                            </div>
+                            <div class="card-body">
+                                <p>MIN 5</p>
+                                <p style="color:black;font-size:22px;"></p>
+
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= tempindoor_min(); ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Wassertemperatur
+                            </div>
+                            <div class="card-body">
+                                <p>MIN 5</p>
+                                <p style="color:black;font-size:22px;"></p>
+
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= tempaqua_min(); ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
