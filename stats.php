@@ -119,7 +119,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>TOP 5</p>
                                 <p style="color:black;font-size:22px;"></p>
-                                    <table class="table table-striped w-auto">
+                                    <table class="table table-striped w-100">
                                         <thead>
                                             <tr>
                                                 <th>Datum</th>
