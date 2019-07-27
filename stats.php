@@ -118,7 +118,7 @@ include('functions.php');
                             </div>
                             <div class="card-body">
                                 <p>TOP 5</p>
-                                <p style="color:black;font-size:22px;">
+                                <p style="color:black;font-size:22px;"></p>
                                     <table class="table table-striped w-auto">
                                         <thead>
                                             <tr>
