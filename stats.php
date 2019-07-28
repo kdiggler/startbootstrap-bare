@@ -68,9 +68,7 @@ include('functions.php');
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php">About</a>
@@ -80,6 +78,11 @@ include('functions.php');
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.php">Diagramme</a>
+                    </li>
+                    <li class="nav-item avtive">
+                        <a class="nav-link" href="#">Statistiken
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                 </ul>
             </div>

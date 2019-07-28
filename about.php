@@ -81,6 +81,9 @@ include('dbconnect.php');
                     <li class="nav-item">
                         <a class="nav-link" href="charts.php">Diagramme</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stats.php">Statistiken</a>
+                    </li>
                 </ul>
             </div>
         </div>
