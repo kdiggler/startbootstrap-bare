@@ -4,7 +4,7 @@ include("dbconnect.php");
 
 // write your SQL query here (you may use parameters from $_GET or $_POST if you need them)
 // $query = mysqli_query($con, "SELECT event, celsius FROM temperature");
-$query = mysqli_query($con, "SELECT relhum,event FROM humidity WHERE event > DATE_SUB(NOW(),INTERVAL 48 HOUR)");
+$query = mysqli_query($con, "SELECT relhum,event FROM humidity WHERE event > DATE_SUB(NOW(),INTERVAL 168 HOUR)");
 
 
 $table = array();
