@@ -116,4 +116,27 @@ function tempaqua_min()
     mysqli_close($con);
 }
 
+#TEMPERATUR LUFTFEUCHTIGKEIT FUNCTION MIN
+function relhum_min()
+{
+    $con = mysqli_connect("localhost", "arduser", "ardtest", "arduino");
+
+    /* check connection */
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+    $query = "SELECT MAX(relhum) AS relhum, event, DATE(event) AS date_created FROM humidity GROUP BY DATE(event) ORDER BY relhum desc LIMIT 5";
+    #$query = "SELECT MAX(relhum) AS relhum, DATE(event) AS date_created FROM humidity GROUP BY DATE(event) ORDER BY id desc LIMIT 5";
+
+    if ($result = mysqli_query($con, $query)) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo"<tr><td>{$row["event"]}</td><td>{$row["relhum"]}</td></tr>\n";
+        }
+    }
+
+    /* close connection */
+    mysqli_close($con);
+}
+
 ?>
