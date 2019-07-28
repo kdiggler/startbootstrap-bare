@@ -95,7 +95,7 @@ include('functions.php');
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
-                            <div class="card-header bg-danger">
+                            <div class="card-header bg-primary text-white">
                                 Luftfeuchtigkeit
                             </div>
                             <div class="card-body">
@@ -118,7 +118,7 @@ include('functions.php');
                     </div>
                     <div class="col-sm-4">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-warning text-white">
                                 Innentemperatur
                             </div>
                             <div class="card-body">
@@ -142,7 +142,7 @@ include('functions.php');
                     </div>
                     <div class="col-sm-4">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-info text-white">
                                 Wassertemperatur
                             </div>
                             <div class="card-body">
