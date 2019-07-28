@@ -80,7 +80,7 @@ function tempindoor_min()
         exit();
     }
 
-   $query = "SELECT MIN(celsius) AS celsius, event, DATE(event) AS date_created FROM temperature GROUP BY DATE(event) ORDER BY celsius desc LIMIT 5";
+   $query = "SELECT MIN(celsius) AS celsius, event, DATE(event) AS date_created FROM temperature GROUP BY DATE(event) ORDER BY celsius asc LIMIT 5";
     # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM temperature ORDER BY celsius desc LIMIT 5";
 
     if ($result = mysqli_query($con, $query)) {
@@ -103,7 +103,7 @@ function tempaqua_min()
         printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
     }
-    $query = "SELECT MIN(celsius) AS celsius, event, DATE(event) AS date_created FROM aquatemp GROUP BY DATE(event) ORDER BY celsius desc LIMIT 5";
+    $query = "SELECT MIN(celsius) AS celsius, event, DATE(event) AS date_created FROM aquatemp GROUP BY DATE(event) ORDER BY celsius asc LIMIT 5";
    # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM aquatemp ORDER BY celsius desc LIMIT 5";
 
     if ($result = mysqli_query($con, $query)) {
