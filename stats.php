@@ -91,11 +91,11 @@ include('functions.php');
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">Statistiken</h1>
-                <h2 class="mt-5">Stats</h2>
+                <h2 class="mt-5">Max/Min Werte</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-danger">
                                 Luftfeuchtigkeit
                             </div>
                             <div class="card-body">
