@@ -286,7 +286,7 @@ include('functions.php');
                                     </thead>
 
                                     <tbody>
-                                        <?= tempindoor_avg_pm(); ?>
+                                        <?= tempindoor_avg_pm(2019); ?>
                                     </tbody>
                                 </table>
                             </div>

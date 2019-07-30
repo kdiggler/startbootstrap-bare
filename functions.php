@@ -140,7 +140,7 @@ function relhum_min()
 }
 
 #TEMPERATUR INNEN DURCHSCHNITT FUNCTION
-function tempindoor_avg_pm()
+function tempindoor_avg_pm($year)
 {
     $con = mysqli_connect("localhost", "arduser", "ardtest", "arduino");
 
@@ -151,7 +151,7 @@ function tempindoor_avg_pm()
     }
 
 
-  $query = "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M - %Y') AS event FROM temperature GROUP BY MONTH(event),YEAR(event) ORDER BY event DESC";
+  $query = "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M - %Y') AS event FROM temperature GROUP BY MONTH(event),YEAR(event) WHERE YEAR(DATE_FORMAT(event,'%Y')) = $year ORDER BY event DESC";
 
   if ($result = mysqli_query($con, $query)) {
     while ($row = mysqli_fetch_assoc($result)) {
