@@ -244,7 +244,7 @@ include('functions.php');
                     </div>
                 </div>
 
-                <h2 class="mt-5">Durchschnittstemperaturen</h2>
+                <h2 class="mt-5">Durchschnittstemperaturen Büro</h2>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
