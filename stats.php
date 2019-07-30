@@ -263,7 +263,7 @@ include('functions.php');
                                     </thead>
 
                                     <tbody>
-                                        <?= tempindoor_avg_pm("2015"); ?>
+                                        <?= tempindoor_avg_pm("2019"); ?>
                                     </tbody>
                                 </table>
                             </div>
@@ -275,7 +275,7 @@ include('functions.php');
                             Temp °C Durchschnitt
                             </div>
                             <div class="card-body">
-                                <p>2018</p>
+                                <p>2015</p>
                                 <p style="color:black;font-size:22px;"></p>
                                 <table class="table table-striped w-100">
                                     <thead>
@@ -286,7 +286,7 @@ include('functions.php');
                                     </thead>
 
                                     <tbody>
-                                        <?= tempindoor_avg_pm("2019"); ?>
+                                        <?= tempindoor_avg_pm("2015"); ?>
                                     </tbody>
                                 </table>
                             </div>
