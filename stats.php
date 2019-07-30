@@ -102,7 +102,7 @@ include('functions.php');
                                 Luftfeuchtigkeit
                             </div>
                             <div class="card-body">
-                                <p>TOP 5</p>
+                                <p>MAX 5</p>
                                 <p style="color:black;font-size:22px;"></p>
                                 <table class="table table-striped w-100">
                                     <thead>
@@ -125,7 +125,7 @@ include('functions.php');
                                 Innentemperatur
                             </div>
                             <div class="card-body">
-                                <p>TOP 5</p>
+                                <p>MAX 5</p>
                                 <p style="color:black;font-size:22px;"></p>
 
                                 <table class="table table-striped w-100">
@@ -149,7 +149,7 @@ include('functions.php');
                                 Wassertemperatur
                             </div>
                             <div class="card-body">
-                                <p>TOP 5</p>
+                                <p>MAX 5</p>
                                 <p style="color:black;font-size:22px;"></p>
 
                                 <table class="table table-striped w-100">
