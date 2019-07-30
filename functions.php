@@ -155,7 +155,7 @@ function tempindoor_avg_pm()
 
   if ($result = mysqli_query($con, $query)) {
     while ($row = mysqli_fetch_assoc($result)) {
-        echo"<tr><td>{$row["celsius"]}</td><td>{$row["event"]}</td></tr>\n";
+        echo"<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
     }
 
     }

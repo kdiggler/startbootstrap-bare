@@ -248,22 +248,22 @@ include('functions.php');
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
-                            <div class="card-header bg-primary text-white">
-                                Luftfeuchtigkeit
+                            <div class="card-header">
+                                Temp °C Durchschnitt
                             </div>
                             <div class="card-body">
-                                <p>TOP 5</p>
+                                <p>2019</p>
                                 <p style="color:black;font-size:22px;"></p>
                                 <table class="table table-striped w-100">
                                     <thead>
                                         <tr>
                                             <th>Datum</th>
-                                            <th>Hum %</th>
+                                            <th>Temp °C</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
-                                        <?= relhum(); ?>
+                                        <?= tempindoor_avg_pm(); ?>
                                     </tbody>
                                 </table>
                             </div>
@@ -271,22 +271,22 @@ include('functions.php');
                     </div>
                     <div class="col-sm-6">
                         <div class="card">
-                            <div class="card-header bg-primary text-white">
-                                Luftfeuchtigkeit
+                            <div class="card-header">
+                            Temp °C Durchschnitt
                             </div>
                             <div class="card-body">
-                                <p>TOP 5</p>
+                                <p>2018</p>
                                 <p style="color:black;font-size:22px;"></p>
                                 <table class="table table-striped w-100">
                                     <thead>
                                         <tr>
                                             <th>Datum</th>
-                                            <th>Hum %</th>
+                                            <th>Temp °C</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
-                                        <?= relhum(); ?>
+                                        <?= tempindoor_avg_pm(); ?>
                                     </tbody>
                                 </table>
                             </div>
