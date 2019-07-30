@@ -139,4 +139,28 @@ function relhum_min()
     mysqli_close($con);
 }
 
+#TEMPERATUR INNEN DURCHSCHNITT FUNCTION
+function tempindoor_avg_pm()
+{
+    $con = mysqli_connect("localhost", "arduser", "ardtest", "arduino");
+
+    /* check connection */
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+
+
+  $query = "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M - %Y') AS event FROM temperature GROUP BY MONTH(event),YEAR(event) ORDER BY event DESC";
+
+  if ($result = mysqli_query($con, $query)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo"<tr><td>{$row["celsius"]}</td><td>{$row["event"]}</td></tr>\n";
+    }
+
+    }
+    /* close connection */
+    mysqli_close($con);
+}
+
 ?>
