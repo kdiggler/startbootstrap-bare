@@ -271,59 +271,8 @@ include('functions.php');
                 </div>
             </div>
         </div>
-
-
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Statistiken</h1>
-                <h2 class="mt-5">Max/Min Werte</h2>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-header bg-primary text-white">
-                                Luftfeuchtigkeit
-                            </div>
-                            <div class="card-body">
-                                <p>TOP 5</p>
-                                <p style="color:black;font-size:22px;"></p>
-                                <table class="table table-striped w-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Datum</th>
-                                            <th>Hum %</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <?= relhum(); ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                  
-                  
-
-                  
-
-                   
-
-                   
-
-                   
-
-                </div>
-            </div>
-        </div>
-
-
-
     </div>
 
-
-    </div>
-    </div>
     <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
 
     <!-- Bootstrap core JavaScript -->
