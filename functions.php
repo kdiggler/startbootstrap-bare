@@ -150,8 +150,7 @@ function tempindoor_avg_pm($year)
         exit();
     }
 
-
-  $query = "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M - %Y') AS event FROM temperature GROUP BY MONTH(event),YEAR(event) WHERE YEAR(DATE_FORMAT(event,'%Y')) = $year ORDER BY event DESC";
+  $query = "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M-%Y') AS event FROM temperature WHERE YEAR(event) = $year GROUP BY MONTH(event),YEAR(event) ORDER BY event DESC";
 
   if ($result = mysqli_query($con, $query)) {
     while ($row = mysqli_fetch_assoc($result)) {
