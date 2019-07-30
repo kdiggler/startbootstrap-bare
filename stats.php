@@ -242,33 +242,9 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <h2 class="mt-5">Durchschnittswerte</h2>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-header bg-info text-white">
-                                Durchschnittstemperatur
-                            </div>
-                            <div class="card-body">
-                                <p>2019</p>
-                                <p style="color:black;font-size:22px;"></p>
-
-                                <table class="table table-striped w-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Datum</th>
-                                            <th>Temp °C</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <?= tempindoor_avg_pm(); ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
+                <h2 class="mt-5">Durchschnittstemperaturen</h2>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
