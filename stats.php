@@ -84,14 +84,17 @@ include('functions.php');
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Statistiken
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#maxmin">Max/Min Werte</a></li>
-          <li><a href="#dwert">Durchschnittstemp.</a></li>
-        </ul>
-      </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Statistiken
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#maxmin">Max/Min Werte</a>
+                            <a class="dropdown-item" href="dwert">Durschnittswerte</a>
+                        <!--<div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>-->
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -101,10 +104,10 @@ include('functions.php');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-            <div class="col-sm-12">
-            <a href="#maxmin">Take me to the paragraph.</a>
-            <a href="#dwert">Take me to the paragraph.</a>
-                    </div>
+                <div class="col-sm-12">
+                    <a href="#maxmin">Take me to the paragraph.</a>
+                    <a href="#dwert">Take me to the paragraph.</a>
+                </div>
                 <h1 class="mt-5">Statistiken</h1>
                 <h2 class="mt-5" id="maxmin">Max/Min Werte</h2>
                 <div class="row">
@@ -284,7 +287,7 @@ include('functions.php');
                     <div class="col-sm-6">
                         <div class="card">
                             <div class="card-header">
-                            Temp °C Durchschnitt
+                                Temp °C Durchschnitt
                             </div>
                             <div class="card-body">
                                 <p>2015</p>
