@@ -93,8 +93,12 @@ include('functions.php');
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
+            <div class="col-sm-12">
+            <a href="#maxmin">Take me to the paragraph.</a>
+            <a href="#dwert">Take me to the paragraph.</a>
+                    </div>
                 <h1 class="mt-5">Statistiken</h1>
-                <h2 class="mt-5">Max/Min Werte</h2>
+                <h2 class="mt-5" id="maxmin">Max/Min Werte</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
@@ -244,7 +248,7 @@ include('functions.php');
                     </div>
                 </div>
 
-                <h2 class="mt-5">Durchschnittstemperaturen Büro</h2>
+                <h2 class="mt-5" id="dwert">Durchschnittstemperaturen Büro</h2>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
