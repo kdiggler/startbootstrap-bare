@@ -71,18 +71,10 @@ include('functions.php');
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="sensors.php">Sensoren</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.php">Diagramme</a>
-                    </li>
-                    <li class="nav-item avtive">
-                        <a class="nav-link" href="#">Statistiken
-                            <span class="sr-only">(current)</span>
-                        </a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -94,6 +86,9 @@ include('functions.php');
                         <!--<div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>-->
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                 </ul>
             </div>

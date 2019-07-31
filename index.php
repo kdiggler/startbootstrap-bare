@@ -99,16 +99,24 @@ include('dbconnect.php');
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="sensors.php">Sensoren</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="charts.php">Diagramme</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="stats.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Statistiken
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#maxmin">Max/Min Werte</a>
+                            <a class="dropdown-item" href="#dwert">Durschnittswerte</a>
+                            <!--<div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>-->
+                        </div>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="stats.php">Statistiken</a>
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                 </ul>
             </div>
