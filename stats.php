@@ -84,7 +84,7 @@ include('functions.php');
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="dropdown">
+                    <li class="nav-item">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Statistiken
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
