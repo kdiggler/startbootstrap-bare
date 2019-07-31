@@ -84,6 +84,14 @@ include('functions.php');
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                    <li class="dropdown" class="nav-item active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Statistiken
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#maxmin">Max/Min Werte</a></li>
+          <li><a href="#dwert">Durchschnittstemp.</a></li>
+        </ul>
+      </li>
                 </ul>
             </div>
         </div>
