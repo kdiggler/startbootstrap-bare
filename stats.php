@@ -84,13 +84,13 @@ include('functions.php');
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Statistiken
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#maxmin">Max/Min Werte</a>
-                            <a class="dropdown-item" href="dwert">Durschnittswerte</a>
+                            <a class="dropdown-item" href="#dwert">Durschnittswerte</a>
                         <!--<div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>-->
                         </div>
