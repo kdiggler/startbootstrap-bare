@@ -79,7 +79,7 @@ include('functions.php');
             };
             // Instantiate and draw our chart, passing in some options.
             //do not forget to check ur div ID
-            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div4'));
             chart.draw(data, options);
         }
 
@@ -317,7 +317,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>2015</p>
                                 <p style="color:black;font-size:22px;"></p>
-                                <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
+                                <div id="chart_div4" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
                         </div>
                     </div>
@@ -332,8 +332,8 @@ include('functions.php');
 
     <div class="footer">D'Site isch vor Gruppe BI designt u programmiert , <strong>no cöpyreit 2019</strong>.</div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <!-- Bootstrap core JavaScript 
+    <script src="vendor/jquery/jquery.slim.min.js"></script>-->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
