@@ -54,6 +54,40 @@ include('functions.php');
             text-align: center;
         }
     </style>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            'packages': ['corechart']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var json = $.ajax({
+                url: 'get_json.php', // make this url point to the data file
+                dataType: 'json',
+                async: false
+            }).responseText;
+
+            // Create our data table out of JSON data loaded from server.
+            var data = new google.visualization.DataTable(json);
+            var options = {
+                title: 'Temp',
+                legend: {
+                    position: 'right'
+                }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            //do not forget to check ur div ID
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+
+        $(window).resize(function() {
+            drawChart();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -283,18 +317,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>2015</p>
                                 <p style="color:black;font-size:22px;"></p>
-                                <table class="table table-striped w-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Datum</th>
-                                            <th>Temp °C</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <?= tempindoor_avg_pm("2015"); ?>
-                                    </tbody>
-                                </table>
+                                <div id="chart_div" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
                         </div>
                     </div>
