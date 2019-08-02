@@ -286,7 +286,7 @@ include('functions.php');
 
                 <h2 class="mt-5" id="dwert">Durchschnittstemperaturen Büro</h2>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
                                 Temp °C Durchschnitt
@@ -309,7 +309,7 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-8">
                         <div class="card">
                             <div class="card-header">
                                 Temp °C Durchschnitt
