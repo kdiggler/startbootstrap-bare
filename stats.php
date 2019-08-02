@@ -79,7 +79,7 @@ include('functions.php');
             };
             // Instantiate and draw our chart, passing in some options.
             //do not forget to check ur div ID
-            var chart = new google.visualization.AreaChart(document.getElementById('chart_div4'));
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
             chart.draw(data, options);
         }
 
@@ -315,7 +315,7 @@ include('functions.php');
                                 Temp °C Durchschnitt
                             </div>
                             <div class="card-body">
-                                <p>2015</p>
+                                <p>2019</p>
                                 <p style="color:black;font-size:22px;"></p>
                                 <div id="chart_div4" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
