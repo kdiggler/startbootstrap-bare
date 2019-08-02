@@ -79,7 +79,7 @@ include('functions.php');
             };
             // Instantiate and draw our chart, passing in some options.
             //do not forget to check ur div ID
-            var chart = new google.visualization.LineChart(document.getElementById('chart_div4'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
             chart.draw(data, options);
         }
 
