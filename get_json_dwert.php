@@ -5,7 +5,7 @@ include("dbconnect.php");
 // write your SQL query here (you may use parameters from $_GET or $_POST if you need them)
 // $query = mysqli_query($con, "SELECT event, celsius FROM temperature");
 #$query = mysqli_query($con, "SELECT event,celsius FROM temperature WHERE event > DATE_SUB(NOW(),INTERVAL 168 HOUR)");
-$query = mysqli_query($con, "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M-%Y') AS event FROM temperature WHERE YEAR(event) = $year GROUP BY MONTH(event),YEAR(event) ORDER BY event DESC");
+$query = mysqli_query($con, "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M') AS event FROM temperature WHERE YEAR(event) = 2019 GROUP BY MONTH(event),YEAR(event) ORDER BY event DESC");
 
 
 
