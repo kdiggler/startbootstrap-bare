@@ -207,7 +207,7 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <p>
+                    <br>
 
                     <div class="col-sm-4">
                         <div class="card">
