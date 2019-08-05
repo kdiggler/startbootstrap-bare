@@ -15,7 +15,7 @@ function tempindoor()
 
     if ($result = mysqli_query($con, $query)) {
         while ($row = mysqli_fetch_assoc($result)) {
-            echo"<tr><td>{$row["date_created"]}</td><td>{$row["celsius"]}</td></tr>\n";
+            echo"<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
         }
 
     }
