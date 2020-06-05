@@ -313,7 +313,7 @@ include('functions.php');
                     <div class="col-sm-8">
                         <div class="card">
                             <div class="card-header">
-                                Temp °C Durchschnitt
+                                Temp °C Durchschnitt1
                             </div>
                             <div class="card-body">
                                 <p>2020</p>
