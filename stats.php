@@ -313,10 +313,10 @@ include('functions.php');
                     <div class="col-sm-8">
                         <div class="card">
                             <div class="card-header">
-                                Temp °C Durchschnitt1
+                                Temp °C Durchschnitt
                             </div>
                             <div class="card-body">
-                                <p>2020</p>
+                                <p>2019</p>
                                 <p style="color:black;font-size:22px;"></p>
                                 <div id="chart_div4" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
@@ -342,6 +342,18 @@ include('functions.php');
                                         <?= tempindoor_avg_pm("2020"); ?>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card">
+                            <div class="card-header">
+                                Temp °C Durchschnitt
+                            </div>
+                            <div class="card-body">
+                                <p>2020</p>
+                                <p style="color:black;font-size:22px;"></p>
+                                <div id="chart_div4" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
                         </div>
                     </div>
