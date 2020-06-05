@@ -322,6 +322,29 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Temp °C Durchschnitt
+                            </div>
+                            <div class="card-body">
+                                <p>2019</p>
+                                <p style="color:black;font-size:22px;"></p>
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= tempindoor_avg_pm("2019"); ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
