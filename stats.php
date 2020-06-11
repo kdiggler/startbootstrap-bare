@@ -61,6 +61,7 @@ include('functions.php');
             'packages': ['corechart']
         });
         google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawChart2020);
 
         function drawChart() {
             var json = $.ajax({
@@ -83,8 +84,30 @@ include('functions.php');
             chart.draw(data, options);
         }
 
+        function drawChart2020() {
+            var json = $.ajax({
+                url: 'get_json_dwert.php', // make this url point to the data file
+                dataType: 'json',
+                async: false
+            }).responseText;
+
+            // Create our data table out of JSON data loaded from server.
+            var data = new google.visualization.DataTable(json);
+            var options = {
+                title: 'Temp',
+                legend: {
+                    position: 'right'
+                }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            //do not forget to check ur div ID
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2020'));
+            chart.draw(data, options);
+        }
+
         $(window).resize(function() {
             drawChart();
+            drawChart2020();
         });
     </script>
 
@@ -318,7 +341,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>2019</p>
                                 <p style="color:black;font-size:22px;"></p>
-                                <div id="chart_div5" style="width: 100%; height: 450px; margin: 0"></div>
+                                <div id="chart_div4" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
                         </div>
                     </div>
@@ -353,7 +376,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>2020</p>
                                 <p style="color:black;font-size:22px;"></p>
-                                <div id="chart_div4" style="width: 100%; height: 450px; margin: 0"></div>
+                                <div id="chart_div2020" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
                         </div>
                     </div>
