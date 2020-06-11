@@ -86,7 +86,7 @@ include('functions.php');
 
         function drawChart2020() {
             var json = $.ajax({
-                url: 'get_json_dwert.php', // make this url point to the data file
+                url: 'get_json_dwert2.php', // make this url point to the data file
                 dataType: 'json',
                 async: false
             }).responseText;
