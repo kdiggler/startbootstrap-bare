@@ -63,7 +63,7 @@ include('functions.php');
         google.charts.setOnLoadCallback(drawChart);
         google.charts.setOnLoadCallback(drawChart2020);
 
-        function drawChart() {
+        function drawChart1() {
             var json = $.ajax({
                 url: 'get_json_dwert.php', // make this url point to the data file
                 dataType: 'json',
