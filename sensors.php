@@ -70,7 +70,7 @@ include('dbconnect.php');
     $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM temperature";
     $result = mysqli_query($con, $query);
     $row3 =  mysqli_fetch_assoc($result);
-    $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM temperatur2";
+    $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM outdoortemp1";
     $result = mysqli_query($con, $query);
     $row4 =  mysqli_fetch_assoc($result);
     $query = "SELECT ROUND(max(celsius), 1) AS max_temp, ROUND(min(celsius), 1) AS min_temp FROM aquatemp";
