@@ -6,4 +6,7 @@ $SQL = "INSERT INTO arduino.temperature (sensor ,celsius) VALUES ('".$_GET["seri
 mysqli_query($con,$SQL);
 // Go to the review_data.php (optional)
 header("Location: mysensor.php");
+
+include('dbtest.php');
+
 ?>

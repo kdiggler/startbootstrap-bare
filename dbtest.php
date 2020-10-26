@@ -15,5 +15,5 @@ include('dbconnect.php');
 
 ?>
 
-<strong><?= $result ?> &deg;C</strong>
+<strong><?= $$outdoortemp_ext['celsius'] ?> &deg;C</strong>
 
