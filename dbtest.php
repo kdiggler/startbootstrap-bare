@@ -9,9 +9,11 @@ include('dbconnect.php');
 
     $SQL = "INSERT INTO arduino.outdoortemp1 (sensor, celsius) VALUES ('WS_temp1', '$outdoortemp_ext')";
 
-    <strong><?= $outdoortemp_ext['celsius'] ?> &deg;C</strong>
-
-    // Execute SQL statement
+// Execute SQL statement
     mysqli_query($con,$SQL);
+    
 
 ?>
+
+<strong><?= $outdoortemp_ext['celsius'] ?> &deg;C</strong>
+
