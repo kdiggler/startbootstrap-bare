@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('kdiggler.ddns.net:3306', 'aquacontrol', 'aqua$1234', 'aquacontroldb');
+$con = mysqli_connect('kdiggler.ddns.net:3306', 'aquacontrol1', 'aqua$1234', 'aquacontroldb');
 if($con->connect_errno > 0){
     die('Unable to connect to database [' . $con->connect_error . ']');
 }
