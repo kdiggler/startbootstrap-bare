@@ -7,7 +7,7 @@ include('dbconnect.php');
     $result = mysqli_query($con_ext, $query);
     $outdoortemp_ext =  mysqli_fetch_assoc($result);
 
-    $SQL = "INSERT INTO arduino.outdoortemp1 (sensor, celsius) VALUES ('WS_temp1', '$outdoortemp_ext['celsius']')";
+    $SQL = "INSERT INTO arduino.outdoortemp1 (sensor, celsius) VALUES ('WS_temp1', '$outdoortemp_ext')";
 
 // Execute SQL statement
     mysqli_query($con,$SQL);
@@ -15,6 +15,6 @@ include('dbconnect.php');
 
 ?>
 
-<strong><?= $outdoortemp_ext['celsius'] ?> &deg;C</strong>
-<strong><?= $result['celsius'] ?> &deg;C</strong>
+<strong><?= $outdoortemp_ext ?> &deg;C</strong>
+<strong><?= $result ?> &deg;C</strong>
 
