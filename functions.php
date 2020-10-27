@@ -128,7 +128,7 @@ function tempoutdoor_min()
         exit();
     }
 
-   $query = "SELECT MIN(celsius) AS celsius, event, DATE(event) AS date_created FROM temperature GROUP BY DATE(event) ORDER BY celsius asc LIMIT 5";
+   $query = "SELECT MIN(celsius) AS celsius, event, DATE(event) AS date_created FROM outdoortemp1 GROUP BY DATE(event) ORDER BY celsius asc LIMIT 5";
     # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM temperature ORDER BY celsius desc LIMIT 5";
 
     if ($result = mysqli_query($con, $query)) {
