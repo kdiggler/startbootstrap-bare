@@ -105,6 +105,27 @@ include('functions.php');
             chart.draw(data, options);
         }
 
+        function drawChart_outdoor2020() {
+            var json = $.ajax({
+                url: 'get_json_dwert2.php', // make this url point to the data file
+                dataType: 'json',
+                async: false
+            }).responseText;
+
+            // Create our data table out of JSON data loaded from server.
+            var data = new google.visualization.DataTable(json);
+            var options = {
+                title: 'Temp ',
+                legend: {
+                    position: 'right'
+                }
+            };
+            // Instantiate and draw our chart, passing in some options.
+            //do not forget to check ur div ID
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2020'));
+            chart.draw(data, options);
+        }
+
         $(window).resize(function() {
             drawChart();
             drawChart2020();
@@ -398,6 +419,45 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Temp °C Durchschnitt
+                            </div>
+                            <div class="card-body">
+                                <p>2020</p>
+                                <p style="color:black;font-size:22px;"></p>
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= tempindoor_avg_pm("2020"); ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card">
+                            <div class="card-header">
+                                Temp °C Durchschnitt
+                            </div>
+                            <div class="card-body">
+                                <p>2020</p>
+                                <p style="color:black;font-size:22px;"></p>
+                                <div id="chart_div2020" style="width: 100%; height: 450px; margin: 0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="mt-5" id="dwert">Durchschnittstemperaturen Aussen</h2>
+                <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
                             <div class="card-header">
