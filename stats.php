@@ -134,7 +134,7 @@ include('functions.php');
                         <a class="nav-link" href="charts.php">Diagramme</a>
                     </li>
                     <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="stats.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Statistiken
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
