@@ -248,7 +248,7 @@ include('functions.php');
                                     </thead>
 
                                     <tbody>
-                                        <?= tempaqua(); ?>
+                                        <?= tempoutdoor(); ?>
                                     </tbody>
                                 </table>
                             </div>

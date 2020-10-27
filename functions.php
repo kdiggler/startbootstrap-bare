@@ -23,6 +23,30 @@ function tempindoor()
     mysqli_close($con);
 }
 
+#TEMPERATUR AUSSEN FUNCTION
+function tempoutdoor()
+{
+    $con = mysqli_connect("localhost", "arduser", "ardtest", "arduino");
+
+    /* check connection */
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+
+   $query = "SELECT MAX(celsius) AS celsius, event, DAY(event) AS date_created FROM outdoortemp1 GROUP BY DAY(event) ORDER BY celsius desc LIMIT 5";
+    # $query = "SELECT ROUND(celsius, 1) AS celsius, event FROM temperature ORDER BY celsius desc LIMIT 5";
+
+    if ($result = mysqli_query($con, $query)) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo"<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
+        }
+
+    }
+    /* close connection */
+    mysqli_close($con);
+}
+
 #TEMPERATUR WASSER FUNCTION
 function tempaqua()
 {
