@@ -62,6 +62,7 @@ include('functions.php');
         });
         google.charts.setOnLoadCallback(drawChart);
         google.charts.setOnLoadCallback(drawChart2020);
+        google.charts.setOnLoadCallback(drawChart_outdoor2020);
 
         function drawChart() {
             var json = $.ajax({
