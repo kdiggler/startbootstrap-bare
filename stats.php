@@ -129,6 +129,7 @@ include('functions.php');
         $(window).resize(function() {
             drawChart();
             drawChart2020();
+            drawChart_outdoor2020();
         });
     </script>
 
