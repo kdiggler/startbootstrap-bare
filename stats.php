@@ -254,80 +254,80 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-header bg-primary text-white">
-                                    Luftfeuchtigkeit
-                                </div>
-                                <div class="card-body">
-                                    <p>MIN 5</p>
-                                    <p style="color:black;font-size:22px;"></p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">
+                                Luftfeuchtigkeit
+                            </div>
+                            <div class="card-body">
+                                <p>MIN 5</p>
+                                <p style="color:black;font-size:22px;"></p>
 
-                                    <table class="table table-striped w-100">
-                                        <thead>
-                                            <tr>
-                                                <th>Datum</th>
-                                                <th>Hum %</th>
-                                            </tr>
-                                        </thead>
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Hum %</th>
+                                        </tr>
+                                    </thead>
 
-                                        <tbody>
-                                            <?= relhum_min(); ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <tbody>
+                                        <?= relhum_min(); ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-header bg-warning text-white">
-                                    Innentemperatur
-                                </div>
-                                <div class="card-body">
-                                    <p>MIN 5</p>
-                                    <p style="color:black;font-size:22px;"></p>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header bg-warning text-white">
+                                Innentemperatur
+                            </div>
+                            <div class="card-body">
+                                <p>MIN 5</p>
+                                <p style="color:black;font-size:22px;"></p>
 
-                                    <table class="table table-striped w-100">
-                                        <thead>
-                                            <tr>
-                                                <th>Datum</th>
-                                                <th>Temp °C</th>
-                                            </tr>
-                                        </thead>
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
 
-                                        <tbody>
-                                            <?= tempindoor_min(); ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <tbody>
+                                        <?= tempindoor_min(); ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-header bg-info text-white">
-                                    Wassertemperatur
-                                </div>
-                                <div class="card-body">
-                                    <p>MIN 5</p>
-                                    <p style="color:black;font-size:22px;"></p>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                Wassertemperatur
+                            </div>
+                            <div class="card-body">
+                                <p>MIN 5</p>
+                                <p style="color:black;font-size:22px;"></p>
 
-                                    <table class="table table-striped w-100">
-                                        <thead>
-                                            <tr>
-                                                <th>Datum</th>
-                                                <th>Temp °C</th>
-                                            </tr>
-                                        </thead>
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
 
-                                        <tbody>
-                                            <?= tempaqua_min(); ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <tbody>
+                                        <?= tempaqua_min(); ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
