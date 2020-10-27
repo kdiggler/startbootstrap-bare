@@ -138,7 +138,8 @@ include('functions.php');
                             Statistiken
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="stats.php#maxmin">Max/Min Werte</a>
+                            <a class="dropdown-item" href="stats.php#max">Max Werte</a>
+                            <a class="dropdown-item" href="stats.php#min">Min Werte</a>
                             <a class="dropdown-item" href="stats.php#dwert">Durschnittswerte</a>
                             <!--<div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>-->
@@ -157,7 +158,7 @@ include('functions.php');
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 class="mt-5">Statistiken</h1>
-                <h2 class="mt-5" id="maxmin">Max/Min Werte</h2>
+                <h2 class="mt-5" id="max">Max Werte</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
@@ -256,7 +257,7 @@ include('functions.php');
                     </div>
                 </div>
 
-                <h2 class="mt-5" id="dwert">Min Werte</h2>
+                <h2 class="mt-5" id="min">Min Werte</h2>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card">
