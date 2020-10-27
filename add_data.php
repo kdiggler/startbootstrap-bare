@@ -5,6 +5,4 @@ $SQL = "INSERT INTO arduino.temperature (sensor ,celsius) VALUES ('".$_GET["seri
 // Execute SQL statement
 mysqli_query($con,$SQL);
 
-include('dbtest.php');
-
 ?>
