@@ -151,15 +151,16 @@
                         <a class="nav-link" href="sensors.php">Sensoren</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Diagramme
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="charts.php">Diagramme</a>
+                    </li>
+                    <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="stats.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Statistiken
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="stats.php#maxmin">Max/Min Werte</a>
+                            <a class="dropdown-item" href="stats.php">Statistiken</a>
+                            <a class="dropdown-item" href="stats.php#max">Max Werte</a>
+                            <a class="dropdown-item" href="stats.php#min">Min Werte</a>
                             <a class="dropdown-item" href="stats.php#dwert">Durschnittswerte</a>
                             <!--<div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>-->

@@ -107,6 +107,7 @@ include('dbconnect.php');
                             Statistiken
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="stats.php">Statistiken</a>
                             <a class="dropdown-item" href="stats.php#max">Max Werte</a>
                             <a class="dropdown-item" href="stats.php#min">Min Werte</a>
                             <a class="dropdown-item" href="stats.php#dwert">Durschnittswerte</a>
