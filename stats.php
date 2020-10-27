@@ -254,7 +254,7 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <br><br>
+                    <br><br><p></p>
 
                     <div class="col-sm-4">
                         <div class="card">
