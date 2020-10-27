@@ -230,6 +230,30 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                Aussentermperatur
+                            </div>
+                            <div class="card-body">
+                                <p>MAX 5</p>
+                                <p style="color:black;font-size:22px;"></p>
+
+                                <table class="table table-striped w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Datum</th>
+                                            <th>Temp °C</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <?= tempaqua(); ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                     <br><br>
 
                     <div class="col-sm-4">
