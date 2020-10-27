@@ -107,7 +107,7 @@ include('functions.php');
 
         function drawChart_outdoor2020() {
             var json = $.ajax({
-                url: 'get_json_dwert2.php', // make this url point to the data file
+                url: 'get_json_dwert3.php', // make this url point to the data file
                 dataType: 'json',
                 async: false
             }).responseText;
@@ -122,7 +122,7 @@ include('functions.php');
             };
             // Instantiate and draw our chart, passing in some options.
             //do not forget to check ur div ID
-            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div2020'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_out_div2020'));
             chart.draw(data, options);
         }
 
@@ -490,7 +490,7 @@ include('functions.php');
                             <div class="card-body">
                                 <p>2020</p>
                                 <p style="color:black;font-size:22px;"></p>
-                                <div id="chart_div2020" style="width: 100%; height: 450px; margin: 0"></div>
+                                <div id="chart_out_div2020" style="width: 100%; height: 450px; margin: 0"></div>
                             </div>
                         </div>
                     </div>
