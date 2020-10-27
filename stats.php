@@ -54,7 +54,7 @@ include('functions.php');
             text-align: center;
         }
     </style>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {
@@ -140,7 +140,7 @@ include('functions.php');
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="stats.php#maxmin">Max/Min Werte</a>
                             <a class="dropdown-item" href="stats.php#dwert">Durschnittswerte</a>
-                        <!--<div class="dropdown-divider"></div>
+                            <!--<div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>-->
                         </div>
                     </li>
@@ -254,84 +254,83 @@ include('functions.php');
                             </div>
                         </div>
                     </div>
-                    <br><br>
 
                     <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-header bg-primary text-white">
-                                Luftfeuchtigkeit
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">
+                                    Luftfeuchtigkeit
+                                </div>
+                                <div class="card-body">
+                                    <p>MIN 5</p>
+                                    <p style="color:black;font-size:22px;"></p>
+
+                                    <table class="table table-striped w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Datum</th>
+                                                <th>Hum %</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <?= relhum_min(); ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <p>MIN 5</p>
-                                <p style="color:black;font-size:22px;"></p>
+                        </div>
 
-                                <table class="table table-striped w-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Datum</th>
-                                            <th>Hum %</th>
-                                        </tr>
-                                    </thead>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bg-warning text-white">
+                                    Innentemperatur
+                                </div>
+                                <div class="card-body">
+                                    <p>MIN 5</p>
+                                    <p style="color:black;font-size:22px;"></p>
 
-                                    <tbody>
-                                        <?= relhum_min(); ?>
-                                    </tbody>
-                                </table>
+                                    <table class="table table-striped w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Datum</th>
+                                                <th>Temp °C</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <?= tempindoor_min(); ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bg-info text-white">
+                                    Wassertemperatur
+                                </div>
+                                <div class="card-body">
+                                    <p>MIN 5</p>
+                                    <p style="color:black;font-size:22px;"></p>
+
+                                    <table class="table table-striped w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Datum</th>
+                                                <th>Temp °C</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <?= tempaqua_min(); ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-header bg-warning text-white">
-                                Innentemperatur
-                            </div>
-                            <div class="card-body">
-                                <p>MIN 5</p>
-                                <p style="color:black;font-size:22px;"></p>
-
-                                <table class="table table-striped w-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Datum</th>
-                                            <th>Temp °C</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <?= tempindoor_min(); ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-header bg-info text-white">
-                                Wassertemperatur
-                            </div>
-                            <div class="card-body">
-                                <p>MIN 5</p>
-                                <p style="color:black;font-size:22px;"></p>
-
-                                <table class="table table-striped w-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Datum</th>
-                                            <th>Temp °C</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <?= tempaqua_min(); ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
 
                 <h2 class="mt-5" id="dwert">Durchschnittstemperaturen Büro</h2>
