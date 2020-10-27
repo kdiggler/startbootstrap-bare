@@ -257,7 +257,7 @@ include('functions.php');
                     </div>
                     <div class="col-sm-4">
                         <div class="card">
-                            <div class="card-header bg-warning text-white">
+                            <div class="card-header bg-secondary text-white">
                                 Aussentermperatur
                             </div>
                             <div class="card-body">
@@ -360,7 +360,7 @@ include('functions.php');
 
                     <div class="col-sm-4">
                         <div class="card">
-                            <div class="card-header bg-warning text-white">
+                            <div class="card-header bg-secondary text-white">
                                 Aussentemperatur
                             </div>
                             <div class="card-body">
