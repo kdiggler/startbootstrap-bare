@@ -210,4 +210,27 @@ function tempindoor_avg_pm($year)
     mysqli_close($con);
 }
 
+#TEMPERATUR INNEN DURCHSCHNITT FUNCTION
+function tempoutdoor_avg_pm($year)
+{
+    $con = mysqli_connect("localhost", "arduser", "ardtest", "arduino");
+
+    /* check connection */
+    if (mysqli_connect_errno()) {
+        printf("Connect failed: %s\n", mysqli_connect_error());
+        exit();
+    }
+
+  $query = "SELECT ROUND(AVG(celsius) ,2) AS celsius,DATE_FORMAT(event,'%M') AS event FROM outdoortemp1 WHERE YEAR(event) = $year GROUP BY MONTH(event),YEAR(event) ORDER BY MONTH(event) ASC";
+
+  if ($result = mysqli_query($con, $query)) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo"<tr><td>{$row["event"]}</td><td>{$row["celsius"]}</td></tr>\n";
+    }
+
+    }
+    /* close connection */
+    mysqli_close($con);
+}
+
 ?>
